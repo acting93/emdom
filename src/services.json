@@ -1,0 +1,120 @@
+{
+    "uslugi":
+    [
+        {
+            "id":0,
+            "name":"Szkolenia wstępne BHP",
+            "prize":"60,00 PLN brutto"
+        },
+        {
+            "id":1,
+            "name":"Szkolenia okresowe BHP dla pracowników",
+            "prize":"100,00 PLN brutto"
+        },
+        {
+            "id":2,
+            "name":"Szkolenia okresowe BHP dla osób kierujących i pracodawców",
+            "prize":"120,00 PLN brutto"
+        },
+        {
+            "id":3,
+            "name":"Szkolenia Ppoż.",
+            "prize":"40,00 PLN brutto"
+        },
+        {
+            "id":4,
+            "name":"Opracowanie oceny ryzyka zawodowego",
+            "prize":"150,00 PLN netto"
+        },
+        {
+            "id":5,
+            "name":"Przeprowadzanie kontroli warunków pracy oraz przestrzegania zasad bezpieczeństwa i higieny pracy przez pracowników",
+            "prize":"do uzgodnienia"
+        },
+        {
+            "id":6,
+            "name":"Pomoc i przygotowanie odpowiedzi na nakazy i wystąpienia inspektorów Państwowej Inspekcji Pracy – realizacja zaleceń pokontrolnych",
+            "prize":"do uzgodnienia"
+        },
+        {
+            "id":7,
+            "name":"Opracowanie dokumentacji związanej z wypadkami przy pracy – od 200,00 do 500,00 PLN netto (cena zależy od wypadku)",
+            "prize":"od 200,00 do 500,00 PLN netto (cena zależy od wypadku)"
+        },
+        {
+            "id":8,
+            "name":"Tworzenie instrukcji BHP i Ppoż.",
+            "prize":"od 15,00 PLN netto"
+        },
+        {
+            "id":9,
+            "name":"Tworzenie Instrukcji Bezpieczeństwa Pożarowego",
+            "prize":"od 450,00 PLN netto"
+        },
+        {
+            "id":10,
+            "name":"Doradztwo z zakresu ppoż.",
+            "prize":"od 150,00 PLN netto"
+        },
+        {
+            "id":11,
+            "name":"kontrola doraźna i okresowa",
+            "prize":"od 50,00 PLN netto"
+        },
+        {
+            "id":12,
+            "name":"ocena i analiza stanu BHP",
+            "prize":"od 150,00 PLN netto"
+        },
+        {
+            "id":13,
+            "name":"Nadzór nad właściwym oznakowaniem obiektów w zakresie BHP i PPOŻ",
+            "prize":"do uzgodnienia"
+        },
+        {
+            "id":14,
+            "name":"Prowadzenie dokumentacji pracowniczych w zakresie kart ubraniowych pracowników i kart środków ochrony indywidualnej, tworzenie tabel przydziału odzieży roboczej, obuwia i środków ochrony indywidualnej",
+            "prize":"do uzgodnienia"
+        },
+        {
+            "id":15,
+            "name":"Doradztwo w zakresie odzieży, obuwia roboczego i środków ochrony indywidualnej oraz zbiorowej",
+            "prize":"cena do uzgodnienia"
+        },
+        {
+            "id":16,
+            "name":"Tworzenie aktów wewnętrznych w zakresie BHP i PPOŻ.",
+            "prize":"cena do uzgodnienia"
+        },
+        {
+            "id":17,
+            "name":"Tworzenie list kontrolnych stanu BHP i PPOŻ",
+            "prize":"cena do uzgodnienia"
+        }
+    ],
+    "firm":[
+        {
+            "id":0,
+            "name":"do 20 pracowników",
+            "prize":"od 700,00 PLN"
+        },
+        {
+            "id":1,
+            "name":"21 – 50 pracowników",
+            "prize":"od 850,00 PLN "
+
+        },
+        {
+            "id":2,
+            "name":"51 – 100 pracowników ",
+            "prize":"od 1000,00 PLN "
+
+        },
+        {
+            "id":4,
+            "name":"powyżej 100 pracowników",
+            "prize":"od 1150,00 PLN "
+
+        }
+    ]
+}

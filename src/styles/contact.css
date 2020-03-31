@@ -1,0 +1,221 @@
+.contact-content{
+    position: relative;
+    height:auto;
+    margin: 0 auto;
+    padding: 0px !important;
+    background: url('../images/bg5.jpg');
+    background-size: 100% 100%;
+}
+.contact-background{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.774);
+    padding: 5px;
+}
+.contact-header{
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+.form-adress{
+    width:100%;
+    height:auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    color: white;
+}
+.form-contact{
+    width:50%;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+.form-contact input{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    border:1px solid white;
+    outline:none;
+    box-shadow: 0px 0px 3px rgb(255, 255, 255);
+    background: none;
+    color: white;
+    font-weight:600;
+}
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+textarea {
+    border:none;
+    outline:none;
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border:1px solid white;
+    box-shadow: 0px 0px 3px rgb(255, 255, 255);
+    background: none;
+}
+.form-contact button{
+    background: none;
+    border:1px solid white;
+    outline:none;
+    padding: 20px;
+    box-shadow: 0px 0px 3px rgb(255, 255, 255);
+    color: white;
+    width:200px;
+}
+.info-sent{
+    width:50%;
+    height: 400px;
+    text-align: center;
+    display: block;
+    padding: 0;
+    display: none
+}
+.icon-sent{
+    width:200px;
+    height:200px;
+    background-image: radial-gradient(rgb(73, 0, 0),rgb(7, 4, 4));
+    box-shadow: 0px 0px 20px white;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+}
+.ok-icon{
+    font-size: 50px;
+    color:green;
+    margin-top:25%;
+    font-size: 100px;
+}
+.info-sent p{
+    margin-top: 30px;
+    width: 100%;
+    padding: 25px;
+}
+.adress{
+    width: 50%;
+    height:auto;
+    padding: 25px;
+    font-weight: 600;
+    color: rgb(221, 221, 221);
+    text-align: justify;
+}
+
+@media(max-width:992px){
+    .icon-sent{
+        width:200px;
+        height:200px;
+    }
+    .ok-icon{
+        font-size: 100px;
+    }
+    .info-sent p{
+        padding: 25px;
+    }
+}
+@media(max-width:768px){
+    .contact-content{
+        background-size: 100% 50%;
+    }
+    .form-adress{
+        display: block;
+    }
+    .form-contact{
+        width:100%;
+    }
+    .adress{
+        width:100%;
+    }
+    .info-sent{
+        width:100%;
+        height: 400px;
+    }
+    .icon-sent{
+        width:200px;
+        height:200px;
+    }
+    .ok-icon{
+        font-size: 100px;
+    }
+    .info-sent p{
+        padding: 25px;
+    }  
+    
+}
+@media(max-width:576px){
+    .info-sent{
+        width:100%;
+        height: 250px;
+    }
+    .icon-sent{
+        width:150px;
+        height:150px;
+    }
+    .ok-icon{
+        font-size: 80px;
+    }
+    .info-sent p{
+        padding: 20px;
+        font-size: 15px;
+    }  
+    .adress{
+        font-size: 13px;
+    }    
+}
+@media(max-width:350px){
+    .contact-header{
+        padding: 2px;
+        font-size: 20px;
+    }
+    .contact-content{
+        background-size: 100% 20%;
+    }
+    .form-adress{
+        display: block;
+    }
+    .form-contact{
+        width:100%;
+    }
+    .form-contact input{
+        width: 100%;
+        font-size: 15px;
+    }
+    .form-contact button{
+        width: 100%;
+        padding: 10px;
+    }
+    .adress{
+        font-size: 10px;
+        padding: 5px;
+    }
+    textarea{
+        font-size: 15px;
+    }
+    .info-sent{
+        width:100%;
+        height: 200px;
+    }
+    .icon-sent{
+        width:100px;
+        height:100px;
+    }
+    .ok-icon{
+        font-size: 50px;
+    }
+    .info-sent p{
+        padding: 5px;
+        font-size: 12px;
+    }
+}
