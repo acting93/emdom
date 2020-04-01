@@ -65,6 +65,7 @@ handleSubmit(e){
     const correctVal = this.validation()
     if(correctVal.validate){
         this.start()
+        this.setCookie()
         this.setState({
             sent:true,
             subject:'',
@@ -118,12 +119,13 @@ validation(){
 }
 
 setCookie(){
-    this.props.changeCookie()
-    console.log("pobrane ciastko " + this.props.cookies)
+   if(this.props.cookieSet === true){
+        Cookie.set('name',"działa",{expires:7})
+  }
 }
 
 componentDidMount(){
-    console.log("pobrane ciastko " + this.props.cookies)
+    console.log("pobrane ciastko " + this.props.cookieSet)
 }
 
     render() { 
@@ -165,7 +167,7 @@ componentDidMount(){
                                         placeholder='wiadomość'
                                     />{this.state.errors.text ? <p>Wiadomość za krótka</p> : null }
                                     <button onClick={this.handleSubmit}>Wyślij</button>
-                                    <button onClick={this.setCookie}>Wyślij</button>
+                                    <button onClick={this.setCookie}>ustaw ciastko</button>
                                 </form>
                             </div>
                             <div className='info-sent' style={this.state.sent === true ? {display:"block"}: {display:"none"}}>
@@ -191,13 +193,13 @@ componentDidMount(){
 
 const MapStateToProps =(state)=>{
     return{
-        cookies: state.setCookie
+        cookieSet: state.setCookie
     }
 }
 
 const MapDispatchToProps =(dispatch)=>{
     return{
-        changeCookie: ()=> dispatch(cookieAction())
+        setCookie: ()=> dispatch(cookieAction()),
     }
 }
  

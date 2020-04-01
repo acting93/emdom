@@ -6,7 +6,7 @@ const Services = () => {
     return ( 
         <>
             <section className='services-section col-12'>
-                <img src={Miasto} alt="miasta" />
+                W budowie
             </section>
         </>
      );

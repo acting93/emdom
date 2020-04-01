@@ -91,7 +91,7 @@ class Navigation extends Component{
   })*/
 
     render(){
-            const {active,isOn} = this.state
+            const {active} = this.state
             return (
                 <> 
                     <div ref={this.refMenu} className={this.state.position ? 'sticky' : 'nav-container col-12'}>
@@ -109,16 +109,16 @@ class Navigation extends Component{
                             </div>
                             <ul style={active === true ? {display:"flex"}: null}>
                                 <li>
-                                    <NavLink exact to='/' onClick={this.handleActive} activeClassName="active"><i className="fas fa-home li-icon"></i>Strona Główna</NavLink>
+                                    <NavLink exact to='/' onClick={this.handleActive} activeStyle={{color:"silver"}} ><i className="fas fa-home li-icon"></i>Strona Główna</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/services' onClick={this.handleActive} activeClassName="active"><i className="fas fa-hard-hat li-icon"></i>Usługi</NavLink>
+                                    <NavLink to='/services' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-hard-hat li-icon"></i>Usługi</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/prize' onClick={this.handleActive} activeClassName="active"><i className="fas fa-euro-sign li-icon"></i>Cennik</NavLink>
+                                    <NavLink to='/prize' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-euro-sign li-icon"></i>Cennik</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/contact' onClick={this.handleActive} activeClassName="active"><i className="fas fa-mobile li-icon"></i>Kontakt</NavLink>
+                                    <NavLink to='/contact' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-mobile li-icon"></i>Kontakt</NavLink>
                                 </li>
                             </ul>
                         </div>            

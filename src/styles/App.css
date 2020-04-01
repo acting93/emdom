@@ -6,6 +6,32 @@ body{
     position: relative;
     padding:none;
 }
+.cookie-div{
+    width:100%;
+    height:auto;
+    background: rgb(61, 0, 0);
+    border-top: 3px solid white;
+    position: fixed;
+    bottom:0;
+    padding: 20px;
+    color: silver;
+    font-size: auto;
+    text-align: justify;
+}
+.cookie-div button{
+    background: silver;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+@media(max-width:768px){
+    .cookie-div{
+        font-size: 15px;
+    }
+}
 
-
-
+@media(max-width:450px){
+    .cookie-div{
+        font-size: 12px;
+    }
+}

@@ -1,8 +1,8 @@
 .services-section{
     height:800px;
-    background-image:radial-gradient(rgb(78, 4, 4),rgb(0, 0, 0))
-}
-.services-section img{
-    width:1000px;
-    height: 600px;
+    background-image:radial-gradient(rgb(78, 4, 4),rgb(0, 0, 0));
+    color:white;
+    text-align: center;
+    line-height: 400px;
+    font-size: 35px;
 }

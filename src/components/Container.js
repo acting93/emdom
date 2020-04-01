@@ -17,10 +17,10 @@ class Container extends Component {
             <>
                 <section className='section-content col-12'>
                     <Switch>
-                        <Route exact path="/" component={Homepage}></Route>
-                        <Route path="/services" component={Services}></Route>
-                        <Route path="/prize" component={Prize}></Route>
-                        <Route path="/contact" component={Contact}></Route>
+                        <Route exact path="/" component={Homepage}/>
+                        <Route path="/services" component={Services}/>
+                        <Route path="/prize" component={Prize}/>
+                        <Route path="/contact" component={Contact}/>
                     </Switch>
                 </section>
             </>

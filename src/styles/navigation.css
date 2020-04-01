@@ -1,5 +1,5 @@
 .active{
-    color:white;
+    color:rgb(43, 1, 1);
 }
 .nav-container{
     position: relative;
@@ -44,6 +44,7 @@
     text-align: center;
     display: -webkit-box;
     display: flex;
+    
 }
 .menu ul li{
     -webkit-box-orient: horizontal;
