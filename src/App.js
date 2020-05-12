@@ -18,7 +18,6 @@ class App extends Component {
   }
 
   componentDidMount(){
-    console.log("app " + this.props.cookiestate)
     if(Cookie.get('generalcookie')){
       this.props.cookieSet()
     }

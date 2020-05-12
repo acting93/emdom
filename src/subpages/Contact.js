@@ -27,7 +27,7 @@ class Contact extends Component {
          this.handleSubmit = this.handleSubmit.bind(this);
          this.validation = this.validation.bind(this);
          this.hideElement = this.hideElement.bind(this);
-         this.setCookie = this.setCookie.bind(this);
+         //this.setCookie = this.setCookie.bind(this);
     }
 
 
@@ -118,15 +118,11 @@ validation(){
     return({subject,phone,mail,text,validate})
 }
 
-setCookie(){
+/*setCookie(){
    if(this.props.cookieSet === true){
         Cookie.set('name',"działa",{expires:7})
   }
-}
-
-componentDidMount(){
-    console.log("pobrane ciastko " + this.props.cookieSet)
-}
+}*/
 
     render() { 
         return ( 
@@ -167,7 +163,6 @@ componentDidMount(){
                                         placeholder='wiadomość'
                                     />{this.state.errors.text ? <p>Wiadomość za krótka</p> : null }
                                     <button onClick={this.handleSubmit}>Wyślij</button>
-                                    <button onClick={this.setCookie}>ustaw ciastko</button>
                                 </form>
                             </div>
                             <div className='info-sent' style={this.state.sent === true ? {display:"block"}: {display:"none"}}>

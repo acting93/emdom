@@ -5,7 +5,6 @@
     background-position: center;
     background-size: 100%;
     text-align: center;
-    overflow: hidden;
     opacity: none;
     display: -webkit-box;
     display: flex;
@@ -35,7 +34,9 @@
     background: rgba(0, 0, 0, 0.322);
 }
 .homepage p{
-    margin-top: 10%;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
 }
 .container-homepage{
     height:auto;
@@ -46,6 +47,7 @@
     -webkit-box-direction: normal;
             flex-direction: row;
     border-bottom: 1px solid black;
+    border:1px solid black;
 }
 .container-homepage:nth-child(2){
     background: rgb(97, 97, 97);
@@ -54,7 +56,7 @@
     background: #850000;
 }
 .homepage-info{
-    padding: 20px !important;
+    padding: 0 !important;
     height:auto;
     width: 100%;
     margin:0 auto;
@@ -86,18 +88,18 @@
     -webkit-box-flex: 1;
             flex-grow: 1;
     height:100%;
-    padding: 0 !important;
+    padding: 30px !important;
     text-align: center;
 }
 .info-photo img{
     position: relative;
     width:550px;
-    height: 450px;
-    border-radius: 60%;
-    box-shadow: 0px 20px 15px black;
+    height: 400px;
+    box-shadow: 0px 0px 15px black;
 }
 .info{
     display: inline-block;
+    width: 50%;
     height:100%;
     text-align: center;
     padding: 10px;
@@ -112,26 +114,43 @@
     background: rgba(0, 0, 0, 0.623);
     padding: 0px !important;
 }
+.container-homepage:nth-child(4) .info{
+    margin: 0 auto;
+}
 .container-homepage:nth-child(4) p{
-    font-size: 20px;
-    padding: 30px;
+    font-size: 16px;
+    padding: 20px;
     text-align: center;
     color:silver;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @media(max-width:1200px){
     .info-photo img{
         width:400px;
-        height: 350px;
-        
+        height: 250px;
+    }
+    .span-title{
+        margin-top: 0;
+    }
+    .span-description{
+        margin-top: 10px;
     }
 }
 
 @media(max-width:996px){
     .info-photo img{
         width:350px;
-        height: 250px;
+        height: 200px;
+    }
+    .span-title{
+        font-size: 28px;
+    }
+    .span-description{
+        font-size: 13px;
+    }
+    .container-homepage:nth-child(4) p{
+        font-size: 13px;
     }
 }
 
@@ -146,7 +165,7 @@
         height:auto;
         width: 100%;
         display: block;
-        padding: 10px !important;
+        padding: 0px !important;
     }
     .span-title{
         margin-top:20px;
@@ -160,11 +179,11 @@
     }
     .info-photo{
         height:50%;
-        padding: 0;
+        padding: 0 !important;
         margin-top:0%;
     }
     .info-photo img{
-        width:90%;
+        width:80%;
         height: 100%;
         position: relative;
         box-sizing: border-box;
@@ -173,23 +192,32 @@
         box-shadow: 0px 0px 15px black;
     }
     .info{
-        height:50%;
+        width: 100%;
+        height:auto;
         text-align: center;
         padding: 10px;
+    }
+    .container-homepage:nth-child(4) .homepage-info{
+        text-align: center;
+    }
+    .container-homepage:nth-child(4) .info{
+        height:100%;
+        width: 50%;
+    }
+    .container-homepage:nth-child(4) p{
+        font-size: 13px;
     }
 }
 @media(max-width:576px){
     .homepage-info{
-        padding: 10px !important;
         height: auto;
     }
     .info-photo{
-        height:40%;
+        height:50%;
         overflow: hidden;
     }
     .info{
-        height:60%;
-        padding: 5px;
+        padding: 10px;
     }
     .span-title{
         margin-top:20px;
@@ -198,13 +226,16 @@
     .span-description{
         margin-top:5%;
         font-size: 13px;
-        
     }
     .info-photo img{
         height: 100%;
     }
+    .container-homepage:nth-child(4) .info{
+        height:100%;
+        width: 100%;
+    }
     .container-homepage:nth-child(4) p{
-        font-size: 15px;
+        font-size: 12px;
         padding: 10px;
     }
 }
@@ -228,8 +259,18 @@
         height: 100%;
     }
     .container-homepage:nth-child(4) p{
-        font-size: 13px;
+        font-size: 12px;
         padding: 10px;
+    }
+    .container-homepage .homepage-info{
+        padding:0 !important;
+    }
+    .container-homepage:nth-child(3) .span-description ul{
+        padding:10px;
+        font-size: 12px;
+    }
+    .container-homepage:nth-child(3) .span-description li{
+        margin-top: 5px;
     }
 }
 

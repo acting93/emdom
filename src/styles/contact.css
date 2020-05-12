@@ -1,5 +1,4 @@
 .contact-content{
-    position: relative;
     height:auto;
     margin: 0 auto;
     padding: 0px !important;
@@ -138,6 +137,9 @@ textarea {
     .adress{
         width:100%;
     }
+    .adress p{
+        padding: 10px;
+    }
     .info-sent{
         width:100%;
         height: 400px;
@@ -172,7 +174,7 @@ textarea {
     }  
     .adress{
         font-size: 13px;
-    }    
+    } 
 }
 @media(max-width:350px){
     .contact-header{

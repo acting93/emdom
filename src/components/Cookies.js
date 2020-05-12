@@ -8,7 +8,6 @@ import Cookie from 'js-cookie';
 class Cookies extends Component {
 
    handleCookie =()=>{
-        console.log("cookies " + this.props.statecookie);
         this.props.setCookie();
             Cookie.set("generalcookie",'test',{expires:7})
             this.props.checkCookie()

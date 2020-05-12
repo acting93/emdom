@@ -17,7 +17,7 @@ class Homepage extends Component {
                     <span><p>Bezpieczeństwo i ochrona pracy</p></span>
                 </div>
                 <section className='container-homepage col-12'>
-                    <div className="homepage-info col-xl-10">
+                    <div className="homepage-info col-xl-12">
                         <div className="info-photo col-12 col-md-6"><img src={img1} alt="img1"/></div>
                         <div className="info col-12 col-md-6">
                             <span className="span-title">Czym się zajmujemy</span>
@@ -28,7 +28,7 @@ class Homepage extends Component {
                     </div>
                 </section>
                 <section className='container-homepage col-12'>
-                    <div className="homepage-info col-xl-10">
+                    <div className="homepage-info col-xl-12">
                         <div className="info col-12 col-md-6">
                         <span className="span-title">Firma Emdom-BHP realizuje:</span>
                             <span className="span-description">
@@ -44,7 +44,7 @@ class Homepage extends Component {
                     </div>
                 </section>
                 <section className='container-homepage col-12'>
-                    <div className="homepage-info">
+                    <div className="homepage-info col-xl-12">
                         <div className="info">
                             <p>Firma Emdom-BHP zapewnia bezpieczeństwo w zakresie obsługi różnych podmiotów gospodarczych dotyczy to zarówno firm o działalności typowo biurowej jak i obsługi BHP dużych inwestycji budowlanych.</p>
                             <p>Świadczymy usługi BHP na najwyższym poziomie, z pełnym zaangażowaniem, na bieżąco szkoli w zakresie zarządzania bezpieczeństwem i higieną pracy.</p>

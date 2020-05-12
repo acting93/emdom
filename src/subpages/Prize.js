@@ -44,12 +44,12 @@ const handleDocs =()=>{
                     </div>
             </div>
             <section className='section-prize col-12'>
-             <div className="prize-container col-12">
-                 <span className="service-title">Zakres i cennik świadczonych usług:</span>
-                 {activeService ? <Services value={services} /> : null}
-                 {activeFirm ? <ServicesFirm value={servicesFirm} /> : null}
-                 {activeDocs ? <Docs /> : null}
-             </div>
+                <div className="prize-container col-12">
+                    <span className="service-title">Zakres i cennik świadczonych usług:</span>
+                    {activeService ? <Services value={services} /> : null}
+                    {activeFirm ? <ServicesFirm value={servicesFirm} /> : null}
+                    {activeDocs ? <Docs /> : null}
+                </div>
             </section>
          </>
      );
