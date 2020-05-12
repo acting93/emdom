@@ -1,31 +1,30 @@
 {
   "files": {
-    "main.css": "/emdom/static/css/main.f56ad6c5.chunk.css",
-    "main.js": "/emdom/static/js/main.e3b5ade4.chunk.js",
-    "main.js.map": "/emdom/static/js/main.e3b5ade4.chunk.js.map",
+    "main.css": "/emdom/static/css/main.9f6e4b26.chunk.css",
+    "main.js": "/emdom/static/js/main.ada6f8c7.chunk.js",
+    "main.js.map": "/emdom/static/js/main.ada6f8c7.chunk.js.map",
     "runtime-main.js": "/emdom/static/js/runtime-main.27c0eeae.js",
     "runtime-main.js.map": "/emdom/static/js/runtime-main.27c0eeae.js.map",
     "static/css/2.de424728.chunk.css": "/emdom/static/css/2.de424728.chunk.css",
-    "static/js/2.da93207d.chunk.js": "/emdom/static/js/2.da93207d.chunk.js",
-    "static/js/2.da93207d.chunk.js.map": "/emdom/static/js/2.da93207d.chunk.js.map",
+    "static/js/2.8c0cbb8c.chunk.js": "/emdom/static/js/2.8c0cbb8c.chunk.js",
+    "static/js/2.8c0cbb8c.chunk.js.map": "/emdom/static/js/2.8c0cbb8c.chunk.js.map",
     "index.html": "/emdom/index.html",
-    "precache-manifest.170a285a5aa4a1097d1651d4b7b10e8e.js": "/emdom/precache-manifest.170a285a5aa4a1097d1651d4b7b10e8e.js",
+    "precache-manifest.50f5e58284d9ccdf84807518dbb10648.js": "/emdom/precache-manifest.50f5e58284d9ccdf84807518dbb10648.js",
     "service-worker.js": "/emdom/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/emdom/static/css/2.de424728.chunk.css.map",
-    "static/css/main.f56ad6c5.chunk.css.map": "/emdom/static/css/main.f56ad6c5.chunk.css.map",
-    "static/js/2.da93207d.chunk.js.LICENSE.txt": "/emdom/static/js/2.da93207d.chunk.js.LICENSE.txt",
+    "static/css/main.9f6e4b26.chunk.css.map": "/emdom/static/css/main.9f6e4b26.chunk.css.map",
+    "static/js/2.8c0cbb8c.chunk.js.LICENSE.txt": "/emdom/static/js/2.8c0cbb8c.chunk.js.LICENSE.txt",
     "static/media/bg.jpg": "/emdom/static/media/bg.4883fed1.jpg",
     "static/media/bg2.jpg": "/emdom/static/media/bg2.284cbb46.jpg",
     "static/media/homepage.css": "/emdom/static/media/bg4.401df1f4.jpg",
     "static/media/contact.css": "/emdom/static/media/bg5.0b985298.jpg",
-    "static/media/kask.png": "/emdom/static/media/kask.1346691a.png",
-    "static/media/miasta.png": "/emdom/static/media/miasta.79fcdd66.png"
+    "static/media/embud2.png": "/emdom/static/media/embud2.a1b45a8b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.27c0eeae.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.da93207d.chunk.js",
-    "static/css/main.f56ad6c5.chunk.css",
-    "static/js/main.e3b5ade4.chunk.js"
+    "static/js/2.8c0cbb8c.chunk.js",
+    "static/css/main.9f6e4b26.chunk.css",
+    "static/js/main.ada6f8c7.chunk.js"
   ]
 }
