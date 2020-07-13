@@ -20,7 +20,7 @@ class Homepage extends Component {
                     <div className="homepage-info col-xl-12">
                         <div className="info-photo col-12 col-md-6"><img src={img1} alt="img1"/></div>
                         <div className="info col-12 col-md-6">
-                            <span className="span-title">Czym się zajmujemy</span>
+                            <span className="span-title">Czym się zajmujemy ?</span>
                             <span className="span-description">Firma świadczy usługi BHP na najwyższym poziomie, z pełnym zaangażowaniem, na bieżąco szkoli w zakresie zarządzania bezpieczeństwem i higieną pracy.
                                   Standardem jest zadowolenie pracowników i pracodawców z przeprowadzonych szkoleń. Stosuje jasne i zrozumiałe, a zarazem skuteczne rozwiązania z zakresu bezpieczeństwa pracy zgodnie z polskim prawodawstwem. Usługi świadczy doraźnie wedle potrzeb lub poprzez umowę współpracy.
                             </span>
