@@ -11,9 +11,9 @@ const ServicesFirm = (props) => {
           <>
             <div className="firm-container">
                 {ServicesFirm}
-            </div>
-            <div className='services-description'>
-                <p>Powyższy cennik zawiera orientacyjne koszty usług proponowanych przez moją firmę. Każda oferta wyceniana jest indywidualnie i dostosowana do aktualnych zapotrzebowań klienta.</p>
+                <div className='services-description'>
+                    <p>Powyższy cennik zawiera orientacyjne koszty usług proponowanych przez moją firmę. Każda oferta wyceniana jest indywidualnie i dostosowana do aktualnych zapotrzebowań klienta.</p>
+                </div>
             </div>
           </>      
      );

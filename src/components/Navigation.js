@@ -10,19 +10,16 @@ class Navigation extends Component{
         this.state = {
             active: false,
             position:false
-           // isOn:false
         }
         this.handleActive = this.handleActive.bind(this);
         this.handleMenuWidth = this.handleMenuWidth.bind(this);
-        //this.handleOn = this.handleOn.bind(this);
         this.handleSticky = this.handleSticky.bind(this);
         this.refMenu = React.createRef();
     }
 
     handleActive(){
         this.setState({
-            active: !this.state.active,
-            isOn:true
+            active: !this.state.active
         })
     }
 
@@ -70,7 +67,7 @@ class Navigation extends Component{
             return (
                 <> 
                     <div ref={this.refMenu} className={this.state.position === true ? 'sticky' : 'nav-container col-12'} >
-                        <div className='menu-logo'><img src={Logo} alt="logo" style={{width:"100%",height:"100%"}} /></div>
+                        <NavLink to='/'><div className='menu-logo'><img src={Logo} alt="logo" style={{width:"100%",height:"100%"}} /></div></NavLink>
                         <div className='menu'>
                             <button className={this.state.active ? 'navbar-btnX' :'navbar-btn'} onClick={this.handleActive}>
                                 <span></span>
@@ -80,7 +77,7 @@ class Navigation extends Component{
                             <div className='contact-container'>
                                 <ul style={active === true ? {display:"flex"}: null}>
                                     <li>
-                                        <NavLink exact to='/' onClick={this.handleActive} activeStyle={{color:"silver"}} ><i className="fas fa-home li-icon"></i>Strona Główna</NavLink>
+                                        <NavLink exact to='/' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-home li-icon"></i>Strona Główna</NavLink>
                                     </li>
                                     <li>
                                         <NavLink to='/services' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-hard-hat li-icon"></i>Usługi</NavLink>

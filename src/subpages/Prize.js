@@ -5,7 +5,6 @@ import data from '../services.json';
 import Services from '../services/Services';
 import ServicesFirm from '../services/ServicesFirm';
 import Docs from '../services/Docs';
-import {connect} from 'react-redux';
 
 const Prize = () => {
 

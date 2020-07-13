@@ -173,10 +173,10 @@ validation(){
                             </div> 
                             <div className='adress'>
                                 <p>Usługi BHP i PPOŻ</p>
-                                <p>EMIL DOMAGAŁA EMDOM-BHP</p>
+                                <p>EMDOM-BHP</p>
                                 <p>Adres: 26-640 Chomentów-Puszcz, Mazowieckie<br/>05-550 Piaseczno</p>
                                 <p>Tel. 123-456-789</p>
-                                <p>Adres e-mail: EMIL DOMAGAŁA "EMDOM-BHP"</p>
+                                <p>Adres e-mail: "EMDOM-BHP"</p>
                             </div>
                         </div>
                     </div>

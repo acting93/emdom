@@ -1,7 +1,7 @@
 .homepage{
-    height: 300px;
+    height: 600px;
     width:100%;
-    background: url('../images/bg3.jpg');
+    background: url('../images/bg3.jpg') fixed;
     background-position: center;
     background-size: 100%;
     text-align: center;
@@ -43,6 +43,7 @@
     padding: 0 !important;
     display: -webkit-box;
     display: flex;
+    flex-direction: column;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
@@ -90,11 +91,11 @@
     height:100%;
     padding: 30px !important;
     text-align: center;
+    background: rgba(0, 0, 0, 0.603);
 }
 .info-photo img{
     position: relative;
-    width:550px;
-    height: 400px;
+    width:35em;
     box-shadow: 0px 0px 15px black;
 }
 .info{
@@ -126,6 +127,9 @@
 }
 
 @media(max-width:1200px){
+    .homepage{
+        height: 400px;
+    }
     .info-photo img{
         width:400px;
         height: 250px;
@@ -154,9 +158,9 @@
     }
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
     .homepage{
-        height: 150px;
+        height: 200px;
     }
     .homepage span{
         font-size: 18px;
@@ -172,19 +176,20 @@
         font-size: 20px;
     }
     .span-description{
-        margin-top:5%;
+        margin-top:3%;
         font-size: 15px;
         text-align: justify;
         height:auto;
+        padding: 5px;
     }
     .info-photo{
         height:50%;
-        padding: 0 !important;
+        padding: 0px !important;
         margin-top:0%;
+        display: none;
     }
     .info-photo img{
-        width:80%;
-        height: 100%;
+        width:30em;
         position: relative;
         box-sizing: border-box;
         margin:0 auto;
@@ -195,7 +200,7 @@
         width: 100%;
         height:auto;
         text-align: center;
-        padding: 10px;
+        padding: 15px;
     }
     .container-homepage:nth-child(4) .homepage-info{
         text-align: center;
