@@ -172,8 +172,7 @@ validation(){
                                 <p>Formularz został wysłany, dziękujemy za kontakt.</p>
                             </div> 
                             <div className='adress'>
-                                <p>Usługi BHP i PPOŻ</p>
-                                <p>EMDOM-BHP</p>
+                                <p>Usługi BHP i PPOŻ EMDOM-BHP</p>
                                 <p>Adres: 26-640 Chomentów-Puszcz, Mazowieckie<br/>05-550 Piaseczno</p>
                                 <p>Tel. 123-456-789</p>
                                 <p>Adres e-mail: "EMDOM-BHP"</p>

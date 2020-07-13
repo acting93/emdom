@@ -107,6 +107,7 @@
     .footer-nav{
         float: left;
         height: auto;
+        background: rgb(71, 0, 0);
     }
     .footer-nav ul{
         display: flex;
@@ -117,6 +118,11 @@
         margin: 5px auto;
         top:2%;
         transform: translateY(0%); 
+    }
+}
+@media(max-width:768px){
+    .footer-contact p{
+        font-size: 14px;
     }
 }
 @media(max-width:576px){
