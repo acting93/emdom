@@ -278,6 +278,11 @@
         margin-top: 5px;
     }
 }
+@media(max-width: 300px){
+    .homepage{
+        background: black;
+    }
+}
 
 @-webkit-keyframes span{
     0%{
