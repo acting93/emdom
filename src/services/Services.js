@@ -18,8 +18,7 @@ const Service =(props)=>{
     return(
         <>
             <div className='services-elements'>
-                <div className='services-element'><p>{name}<br/></p></div>
-                <div className='services-element'><p>{prize}</p></div>
+                <p><i className="fas fa-check-circle"></i>{name}</p><p>Koszt: {prize}</p>
             </div>            
         </>
     );

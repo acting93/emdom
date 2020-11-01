@@ -15,7 +15,10 @@
     margin:0 auto;
     height:auto;
     padding: 30px;
-    background:rgb(22, 22, 22);
+    background:radial-gradient(rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.705)),url('../images/bg6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
     border: 1px solid black;
 }
@@ -23,8 +26,7 @@
     width: 100%;
     padding: 50px;
     height: auto;
-    background: url('../images/bg3.jpg');
-    background-size:100%;
+    background: black;
     color:white;
 }
 .service-title{
@@ -33,8 +35,8 @@
     width: 100%;
     font-size: 25px;
     padding: 25px;
-    color:rgb(175, 0, 0);
-    border-bottom: 5px solid rgb(173, 0, 0);
+    color:rgb(238, 238, 238);
+    border-bottom: 2px solid rgb(173, 0, 0);
 }
 .prize-services{
     display:flex;
@@ -127,37 +129,27 @@
     flex-wrap: wrap;
 }
 .services-elements{
-    width: 30%;
-    margin: 10px;
-    height: 260px;
-    padding:0 !important;
-    font-size: 14px;
-    list-style-type: none;
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-.services-element:first-child{
-    position: relative;
-    height: 80%;
-    background: rgb(122, 122, 122);
-    color: rgb(228, 228, 228);
-    text-align: center;
-}
-.services-element:last-child{
-    position: relative;
-    height: 20%;
-    background: rgb(100, 100, 100);
-    color: rgb(241, 241, 241);
-    text-align: center;
-}
-.services-element p{
-    font-size: 15px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+    color:white;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-transform: uppercase;
-    padding: 5px;
-    font-weight: 600;
+    border-bottom: 1px solid greenyellow;
+}
+.services-elements p{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.fa-check-circle{
+    font-size: 16px;
+    color:white;
+    margin-right: 5px;
+}
+.services-elements p:last-child{
+    color:rgb(6, 218, 6);
 }
 .services-description{
     margin:20px auto;
@@ -220,8 +212,6 @@
         width: 100%;
         padding: 20px;
         height: auto;
-        background: url('../images/bg3.jpg');
-        color:white;
     }
     .service-title{
         font-size: 18px;
@@ -241,10 +231,6 @@
         margin-left: auto;
         margin-right: auto;
         padding: 2px;
-    }
-    .services-elements{
-        width:45%;
-        margin: 2px;
     }
     .firm-container{
         margin-top: 20px;
@@ -285,8 +271,8 @@
         flex-direction: column;
         align-items: center;
     }
+    
     .prize-firm{
-        height: 300px;
         width:80%;
         padding: 0px;
         background-color: rgb(255, 255, 255);
@@ -294,11 +280,6 @@
         font-weight: 400;
         font-size: 15px;
         box-shadow: 0 0 5px rgb(0, 0, 0);
-    }
-    .services-elements{
-        width:70%;
-        height: 250px;
-        box-shadow: 0 0 5px silver;
     }
     .services-description{
         float: left;
@@ -325,7 +306,7 @@
     }
     .prize-service{
         display: block;
-        font-size: 12px;
+        font-size: 18px;
         width:100%;
     }
     .service-title{
@@ -336,15 +317,7 @@
         margin-top: 30px;
         padding: 0;
     }
-    .services-elements{
-        margin-bottom: 10px;
-        width:95%;
-        height: 250px;
-        box-shadow: 0 0 5px silver;
-    }
-    .services ul li{
-        font-size: 12px;
-    }
+   
     .firm-container{
         width: 100%;
         height: auto;
@@ -387,13 +360,6 @@
             margin-bottom: 5px;
             margin-left: 0;
             border-radius: 10px;
-        }
-        .services-elements{
-            width:90%;
-            height: 250px;
-        }
-        .services-elements p{
-            font-size: 10px;
         }
         .services-description p{
             padding: 5px;
