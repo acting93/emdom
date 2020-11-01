@@ -66,29 +66,28 @@ class Navigation extends Component{
             const {active} = this.state
             return (
                 <> 
-                    <div ref={this.refMenu} className={this.state.position === true ? 'sticky' : 'nav-container col-12'} >
-                        <NavLink to='/'><div className='menu-logo'><img src={Logo} alt="logo" style={{width:"100%",height:"100%"}} /></div></NavLink>
-                        <div className='menu'>
-                            <button className={this.state.active ? 'navbar-btnX' :'navbar-btn'} onClick={this.handleActive}>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                            <div className='contact-container'>
-                                <ul style={active === true ? {display:"flex"}: null}>
-                                    <li>
-                                        <NavLink exact to='/' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-home li-icon"></i>Strona Główna</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='/services' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-hard-hat li-icon"></i>Usługi</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='/prize' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-euro-sign li-icon"></i>Cennik</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='/contact' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-mobile li-icon"></i>Kontakt</NavLink>
-                                    </li>
-                                </ul>
+                    <div ref={this.refMenu} className={this.state.position === true ? 'sticky' : 'nav-container'} >
+                        <div className='navigation-elements col-12 col-xl-10'>
+                            <NavLink to='/'><div className='menu-logo'><img src={Logo} alt="logo" style={{width:"100%",height:"100%"}} /></div></NavLink>
+                            <div className='menu'>
+                                <button className={this.state.active ? 'navbar-btnX' :'navbar-btn'} onClick={this.handleActive}>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <div className='contact-container'>
+                                    <ul style={active === true ? {display:"flex"}: null}>
+                                        <li>
+                                            <NavLink exact to='/' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-home li-icon"></i>Strona Główna</NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to='/prize' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-euro-sign li-icon"></i>Cennik i Usługi</NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to='/contact' onClick={this.handleActive} activeStyle={{color:"silver"}}><i className="fas fa-mobile li-icon"></i>Kontakt</NavLink>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>            
                     </div>

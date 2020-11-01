@@ -2,7 +2,7 @@ import React from 'react';
 
 const Docs = () => {
     return ( 
-        <div className='docs-container'>
+        <div className='docs-container col-12 col-lg-10'>
             <div className='docs'>
                 <p>Wykonywanie pełnej dokumentacji powypadkowej:</p>
                 <ul>

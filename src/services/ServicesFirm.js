@@ -11,14 +11,14 @@ const ServicesFirm = (props) => {
           <>
             <div className="firm-container">
                 {ServicesFirm}
-                <div className='services-description'>
+                <div className='services-description col-12 col-lg-10'>
+                    <p><i className="fas fa-exclamation"></i></p>
                     <p>Powyższy cennik zawiera orientacyjne koszty usług proponowanych przez moją firmę. Każda oferta wyceniana jest indywidualnie i dostosowana do aktualnych zapotrzebowań klienta.</p>
                 </div>
             </div>
           </>      
      );
 }
-
 
 const ServiceFirm = props =>{
     const {name,prize} = props
