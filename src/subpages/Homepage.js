@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
 import '../styles/homepage.css';
-import img1 from '../images/bg2.jpg';
-import img2 from '../images/bg.jpg';
-
 
 class Homepage extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
-    render() { 
+    render() {
         return (
-            <>
+            <> 
                 <div className='homepage'>
                     <span><p>Usługi BHP i PPOŻ</p></span><br/>
                     <span><p>Bezpieczeństwo i ochrona pracy</p></span>
                 </div>
                 <section className='container-homepage col-12'>
-                    <div className="homepage-info col-xl-12">
-                        <div className="info-photo col-12 col-md-6"><img src={img1} alt="img1"/></div>
-                        <div className="info col-12 col-md-6">
+                    <div className="homepage-info col-12 col-md-8 col-lg-12">
+                        <div className="info-photo col-12 col-lg-6"></div>
+                        <div className="info col-12 col-lg-6">
                             <span className="span-title">Czym się zajmujemy ?</span>
                             <span className="span-description">Firma świadczy usługi BHP na najwyższym poziomie, z pełnym zaangażowaniem, na bieżąco szkoli w zakresie zarządzania bezpieczeństwem i higieną pracy.
                                   Standardem jest zadowolenie pracowników i pracodawców z przeprowadzonych szkoleń. Stosuje jasne i zrozumiałe, a zarazem skuteczne rozwiązania z zakresu bezpieczeństwa pracy zgodnie z polskim prawodawstwem. Usługi świadczy doraźnie wedle potrzeb lub poprzez umowę współpracy.
@@ -28,8 +25,8 @@ class Homepage extends Component {
                     </div>
                 </section>
                 <section className='container-homepage col-12'>
-                    <div className="homepage-info col-xl-12">
-                        <div className="info col-12 col-md-6">
+                    <div className="homepage-info col-12 col-md-8 col-lg-12">
+                        <div className="info col-12 col-lg-6">
                         <span className="span-title">Firma Emdom-BHP realizuje:</span>
                             <span className="span-description">
                                 <ul>
@@ -40,7 +37,7 @@ class Homepage extends Component {
                                 </ul>
                             </span>
                         </div>
-                        <div className="info-photo col-12 col-md-6"><img src={img2} alt="img2"/></div>
+                        <div className="info-photo col-12 col-lg-6"></div>
                     </div>
                 </section>
                 <section className='container-homepage col-12'>

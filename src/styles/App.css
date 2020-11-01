@@ -1,28 +1,32 @@
 body{
     margin: auto;
     padding:auto;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.144)), url('../images/bg3.jpg')no-repeat;
+    background-position: top;
+    background-size: center;
 }
 .container-fluid{
     position: relative;
     padding:none;
 }
+
 .cookie-div{
     width:100%;
     height:auto;
-    background: rgb(61, 0, 0);
+    background: rgb(224, 224, 224);
     border-top: 3px solid white;
     position: fixed;
     bottom:0;
     padding: 20px;
-    color: silver;
+    color: rgb(134, 0, 0);
     font-size: auto;
     text-align: justify;
 }
 .cookie-div button{
-    background: silver;
+    background: rgb(80, 2, 2);
+    color:white;
     border: none;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
 }
 @media(max-width:768px){
     .cookie-div{

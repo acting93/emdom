@@ -2,29 +2,50 @@
     "uslugi":
     [
         {
+            "id":-3,
+            "name":"Ocena ryzyka COVID-19",
+            "prize":"Kwota do uzgodnienia",
+            "color":"rgb(94, 0, 0)",
+            "font":"20px"
+        },
+        {
+            "id":-2,
+            "name":"Opracowywania planu działań zapobiegawczych w związku z zagrożeniem SARS-CoV-2 (COVID-19)",
+            "prize":"Kwota do uzgodnienia",
+            "color":"rgb(94, 0, 0)",
+            "font":"20px"
+        },
+        {
+            "id":-1,
+            "name":"Wdrożenie działań zapobiegawczych w związku z zagrożeniem SARS-CoV-2 (COVID-19)",
+            "prize":"Kwota do uzgodnienia",
+            "color":"rgb(94, 0, 0)",
+            "font":"20px"
+        },
+        {
             "id":0,
             "name":"Szkolenia wstępne BHP",
-            "prize":"60,00 PLN brutto"
+            "prize":"60,00 PLN "
         },
         {
             "id":1,
             "name":"Szkolenia okresowe BHP dla pracowników",
-            "prize":"100,00 PLN brutto"
+            "prize":"100,00 PLN "
         },
         {
             "id":2,
             "name":"Szkolenia okresowe BHP dla osób kierujących i pracodawców",
-            "prize":"120,00 PLN brutto"
+            "prize":"120,00 PLN "
         },
         {
             "id":3,
             "name":"Szkolenia Ppoż.",
-            "prize":"40,00 PLN brutto"
+            "prize":"40,00 PLN "
         },
         {
             "id":4,
             "name":"Opracowanie oceny ryzyka zawodowego",
-            "prize":"150,00 PLN netto"
+            "prize":"150,00 PLN "
         },
         {
             "id":5,
@@ -38,33 +59,33 @@
         },
         {
             "id":7,
-            "name":"Opracowanie dokumentacji związanej z wypadkami przy pracy – od 200,00 do 500,00 PLN netto (cena zależy od wypadku)",
-            "prize":"od 200,00 do 500,00 PLN netto (cena zależy od wypadku)"
+            "name":"Opracowanie dokumentacji związanej z wypadkami przy pracy – od 200,00 do 500,00 PLN  (cena zależy od wypadku)",
+            "prize":"od 200,00 do 500,00 PLN"
         },
         {
             "id":8,
             "name":"Tworzenie instrukcji BHP i Ppoż.",
-            "prize":"od 15,00 PLN netto"
+            "prize":"od 15,00 PLN "
         },
         {
             "id":9,
             "name":"Tworzenie Instrukcji Bezpieczeństwa Pożarowego",
-            "prize":"od 450,00 PLN netto"
+            "prize":"od 450,00 PLN "
         },
         {
             "id":10,
             "name":"Doradztwo z zakresu ppoż.",
-            "prize":"od 150,00 PLN netto"
+            "prize":"od 150,00 PLN "
         },
         {
             "id":11,
             "name":"kontrola doraźna i okresowa",
-            "prize":"od 50,00 PLN netto"
+            "prize":"od 50,00 PLN "
         },
         {
             "id":12,
             "name":"ocena i analiza stanu BHP",
-            "prize":"od 150,00 PLN netto"
+            "prize":"od 150,00 PLN "
         },
         {
             "id":13,

@@ -1,9 +1,8 @@
 .section-prize{
     height:auto;
-    background: rgb(243, 243, 243);
     display: block;
     padding: 0px !important;
-    border: 1px solid rgb(100, 2, 2);
+    background: rgb(175, 153, 153);
 }
 .prize-header{
     width: 100%;
@@ -16,6 +15,9 @@
     margin:0 auto;
     height:auto;
     padding: 30px;
+    background:rgb(22, 22, 22);
+    overflow: hidden;
+    border: 1px solid black;
 }
 .photo-header{
     width: 100%;
@@ -26,27 +28,26 @@
     color:white;
 }
 .service-title{
-    font-size: 18px;
+    margin:0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
     padding: 25px;
     color:rgb(175, 0, 0);
-    border-bottom: 5px solid silver;
+    border-bottom: 5px solid rgb(173, 0, 0);
 }
 .prize-services{
-    display:-webkit-box;
     display:flex;
     position: relative;
     height:auto;
     width:100%;
     padding: 10px;
     text-align: center;
-    -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 .prize-service{
     position: relative;
-    -webkit-box-orient:horizontal;
-    -webkit-box-direction:normal;
-            flex-direction:row;
+    flex-direction:row;
     width:400px;
     margin-left: 10px;
     padding: 40px;
@@ -71,8 +72,7 @@
     text-align: center;
     color:white;
     padding: 10px;
-    -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 .prize-firm{
     display: inline-block;
@@ -83,7 +83,6 @@
     padding: px;
     font-weight: 400;
     font-size: 18px;
-    box-shadow: 5px 5px 10px rgb(173, 173, 173);
     color:rgb(0, 0, 0);
     background: rgb(206, 206, 206);
 }
@@ -118,46 +117,81 @@
 }
 .services{
     margin-top: 40px;
-    width:500px;
     height:auto;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.services ul{
-    padding: 0;
-}
-.services ul li{
-    font-size: 15px;
-    padding: 5px;
-    margin-bottom: 8px;
+.services-elements{
+    width: 30%;
+    margin: 10px;
+    height: 260px;
+    padding:0 !important;
+    font-size: 14px;
     list-style-type: none;
-    border-bottom: 1px solid rgb(165, 165, 165);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.services-element:first-child{
+    position: relative;
+    height: 80%;
+    background: rgb(122, 122, 122);
+    color: rgb(228, 228, 228);
+    text-align: center;
+}
+.services-element:last-child{
+    position: relative;
+    height: 20%;
+    background: rgb(100, 100, 100);
+    color: rgb(241, 241, 241);
+    text-align: center;
+}
+.services-element p{
+    font-size: 15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: 600;
 }
 .services-description{
+    margin:20px auto;
     display: block;
     width:100%;
     height: auto;
-    margin-top: 20px;
+    background: rgb(124, 3, 3);
+}
+.fa-exclamation{
+    font-size: 50px;
+    color:rgb(219, 219, 219);
 }
 .services-description p{
   padding: 20px;
   font-size: 18px;
-  color:rgb(0, 0, 0);
+  color:rgb(196, 196, 196);
   font-weight: 800;
-  text-decoration: dashed;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
 }
 .docs-container{
-    width:100%;
     height:auto;
     padding: 40px;
-    margin-top:30px;
-    color: rgb(49, 49, 49);
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(231, 231, 231);
 }
 .docs p{
+    color: rgb(231, 231, 231);
     font-weight: 800;
-    text-decoration: dashed;
+    -webkit-text-decoration: dashed;
+            text-decoration: dashed;
 }
-
 
 @media(max-width:1200px){
     .prize-firm{
@@ -174,7 +208,6 @@
 }
 @media(max-width:768px){
     .prize-services{
-        display:-webkit-box;
         display:flex;
         position: relative;
         width:100%;
@@ -191,27 +224,15 @@
         color:white;
     }
     .service-title{
-        font-size: 14px;
+        font-size: 18px;
         padding: 15px;
-        border-bottom: 5px solid silver;
     }
     .prize-service{
         margin-left:5px;
-        -webkit-box-flex: 1;
-                flex-grow: 1;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                flex-direction: row;
+        flex-grow: 1;
+        flex-direction: row;
         font-size: 13px;
         padding: 20px;
-    }
-    .service-title{
-        position: relative;
-        width: 100%;
-        font-size: 15px;
-        padding: 10px;
-        color:green;
-        border-bottom: 3px solid silver;
     }
     .services{
         margin-top: 40px;
@@ -221,9 +242,9 @@
         margin-right: auto;
         padding: 2px;
     }
-    .services ul li{
-        font-size: 13px;
-        padding: 5px;
+    .services-elements{
+        width:45%;
+        margin: 2px;
     }
     .firm-container{
         margin-top: 20px;
@@ -242,7 +263,6 @@
     }
     .name-prize{
         font-size: 15px;
-        
     }
     .prize{
         height: auto;
@@ -275,6 +295,11 @@
         font-size: 15px;
         box-shadow: 0 0 5px rgb(0, 0, 0);
     }
+    .services-elements{
+        width:70%;
+        height: 250px;
+        box-shadow: 0 0 5px silver;
+    }
     .services-description{
         float: left;
         margin-top: 15px;
@@ -291,7 +316,7 @@
 @media(max-width:450px){
     .prize-container{
         margin: 0;
-        padding: 0;
+        padding: 5px;
         height: auto;
     }
     .prize-services{
@@ -304,13 +329,18 @@
         width:100%;
     }
     .service-title{
-        font-size: 15px;
-        padding: 0;
-        border-bottom: 2px solid silver;
+        font-size: 18px;
+        padding: 10px;
     }
     .services{
         margin-top: 30px;
         padding: 0;
+    }
+    .services-elements{
+        margin-bottom: 10px;
+        width:95%;
+        height: 250px;
+        box-shadow: 0 0 5px silver;
     }
     .services ul li{
         font-size: 12px;
@@ -358,8 +388,15 @@
             margin-left: 0;
             border-radius: 10px;
         }
+        .services-elements{
+            width:90%;
+            height: 250px;
+        }
+        .services-elements p{
+            font-size: 10px;
+        }
         .services-description p{
-            padding: 10px;
+            padding: 5px;
             font-size: 12px;
         }
     }

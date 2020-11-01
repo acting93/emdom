@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/contact.css';
 import Cookie from 'js-cookie';
+import axios from 'axios';
 import {connect} from 'react-redux';
 import cookieAction from '../actions/cookieAction';
 
@@ -28,6 +29,7 @@ class Contact extends Component {
          this.validation = this.validation.bind(this);
          this.hideElement = this.hideElement.bind(this);
          //this.setCookie = this.setCookie.bind(this);
+         this.sendMail = this.sendMail.bind(this);
     }
 
 
@@ -64,8 +66,9 @@ handleSubmit(e){
     e.preventDefault()
     const correctVal = this.validation()
     if(correctVal.validate){
-        this.start()
-        this.setCookie()
+        this.start();
+        //this.setCookie();
+        this.sendMail();
         this.setState({
             sent:true,
             subject:'',
@@ -123,6 +126,18 @@ validation(){
         Cookie.set('name',"działa",{expires:7})
   }
 }*/
+
+sendMail(){
+
+    axios('http://localhost/emilmailer/index.php',{
+        method:'post',
+        mode:'cors',
+        headers:{'Content-Type':'application/json'},
+        data: JSON.stringify(this.state)
+    })
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+}
 
     render() { 
         return ( 

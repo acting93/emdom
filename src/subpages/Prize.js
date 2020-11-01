@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/prize.css';
-import {useState,useEffect} from 'react';
+import {useState} from 'react';
 import data from '../services.json';
 import Services from '../services/Services';
 import ServicesFirm from '../services/ServicesFirm';
@@ -35,16 +35,16 @@ const handleDocs =()=>{
     return (
          <>
             <div className="photo-header">
-                    <div className="prize-header">Cennik usług</div>
-                    <div className="prize-services">
-                        <div style={activeService ? {borderBottom:"5px solid orange"} : null} className="prize-service" onClick={handleService}>Usługi</div>
-                        <div style={activeFirm ? {borderBottom:"5px solid orange"} : null} className="prize-service" onClick={handleFirm}>Obsługa firm</div>
-                        <div style={activeDocs ? {borderBottom:"5px solid orange"}: null} className="prize-service" onClick={handleDocs}>Dokumentacja</div>
-                    </div>
+                <div className="prize-header">Cennik usług</div>
+                <div className="prize-services">
+                    <div style={activeService ? {borderBottom:"5px solid orange"} : null} className="prize-service" onClick={handleService}>Usługi</div>
+                    <div style={activeFirm ? {borderBottom:"5px solid orange"} : null} className="prize-service" onClick={handleFirm}>Obsługa firm</div>
+                    <div style={activeDocs ? {borderBottom:"5px solid orange"}: null} className="prize-service" onClick={handleDocs}>Dokumentacja</div>
+                </div>
             </div>
             <section className='section-prize col-12'>
                 <div className="prize-container col-12">
-                    <span className="service-title">Zakres i cennik świadczonych usług:</span>
+                    <p className="service-title col-12 col-lg-10">Zakres i cennik świadczonych usług:</p>
                     {activeService ? <Services value={services} /> : null}
                     {activeFirm ? <ServicesFirm value={servicesFirm} /> : null}
                     {activeDocs ? <Docs /> : null}
