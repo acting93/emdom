@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/emdom/static/css/main.9320911c.chunk.css",
+    "main.css": "/emdom/static/css/main.e64d5553.chunk.css",
     "main.js": "/emdom/static/js/main.cc12a5ff.chunk.js",
     "main.js.map": "/emdom/static/js/main.cc12a5ff.chunk.js.map",
     "runtime-main.js": "/emdom/static/js/runtime-main.27c0eeae.js",
@@ -9,21 +9,22 @@
     "static/js/2.5cfd9b27.chunk.js": "/emdom/static/js/2.5cfd9b27.chunk.js",
     "static/js/2.5cfd9b27.chunk.js.map": "/emdom/static/js/2.5cfd9b27.chunk.js.map",
     "index.html": "/emdom/index.html",
-    "precache-manifest.2ce53768aa9f07da4c8a33a2c8bae30c.js": "/emdom/precache-manifest.2ce53768aa9f07da4c8a33a2c8bae30c.js",
+    "precache-manifest.c4cbe0bc3c06f53765eeff9c1831af30.js": "/emdom/precache-manifest.c4cbe0bc3c06f53765eeff9c1831af30.js",
     "service-worker.js": "/emdom/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/emdom/static/css/2.11829350.chunk.css.map",
-    "static/css/main.9320911c.chunk.css.map": "/emdom/static/css/main.9320911c.chunk.css.map",
+    "static/css/main.e64d5553.chunk.css.map": "/emdom/static/css/main.e64d5553.chunk.css.map",
     "static/js/2.5cfd9b27.chunk.js.LICENSE.txt": "/emdom/static/js/2.5cfd9b27.chunk.js.LICENSE.txt",
     "static/media/homepage.css": "/emdom/static/media/bg4.401df1f4.jpg",
     "static/media/App.css": "/emdom/static/media/bg3.fde84f85.jpg",
     "static/media/contact.css": "/emdom/static/media/bg5.0b985298.jpg",
+    "static/media/prize.css": "/emdom/static/media/bg6.766bce0c.jpg",
     "static/media/embud2.png": "/emdom/static/media/embud2.a1b45a8b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.27c0eeae.js",
     "static/css/2.11829350.chunk.css",
     "static/js/2.5cfd9b27.chunk.js",
-    "static/css/main.9320911c.chunk.css",
+    "static/css/main.e64d5553.chunk.css",
     "static/js/main.cc12a5ff.chunk.js"
   ]
 }
