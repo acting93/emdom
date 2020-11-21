@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/alert.css';
 import {useDispatch} from 'react-redux';
-import { useEffect } from 'react';
 
 const InformationAlert = () => {
 
@@ -30,6 +29,6 @@ const InformationAlert = () => {
             </section>
         </>
      );
-}
+};
  
 export default InformationAlert;

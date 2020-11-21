@@ -9,7 +9,8 @@ class Contact extends Component {
     interval = ''
     constructor(props) {
         super(props);
-        this.state = { 
+        this.state = {
+            name:'', 
             subject:'',
             phone:'',
             mail:'',
@@ -17,6 +18,7 @@ class Contact extends Component {
             count:3,
             stopInterval:false,
             errors:{
+                name:false, 
                 subject:false,
                 phone:false,
                 mail:false,
@@ -30,15 +32,16 @@ class Contact extends Component {
          this.hideElement = this.hideElement.bind(this);
          //this.setCookie = this.setCookie.bind(this);
          this.sendMail = this.sendMail.bind(this);
-    }
+         this.start = this.start.bind(this);
+    };
 
 
 handleChange(e){
-    const name = e.target.name
+    const name = e.target.name;
     this.setState({
         [name]:e.target.value
     })
-}
+};
 
 hideElement(){
     if(this.state.sent === true){
@@ -51,31 +54,33 @@ hideElement(){
                 count:3
             })
             clearInterval(this.interval)
-        }
-    }
-}
+        };
+    };
+};
 
-start=()=>{
+start(){
         this.interval = setInterval(() => {
-            this.hideElement()
+            this.hideElement();
         }, 1000);
-}
+};
 
 
 handleSubmit(e){
-    e.preventDefault()
-    const correctVal = this.validation()
+    e.preventDefault();
+    const correctVal = this.validation();
     if(correctVal.validate){
         this.start();
         //this.setCookie();
         this.sendMail();
         this.setState({
             sent:true,
+            name:'',
             subject:'',
             phone:'',
             mail:'',
             text:'',
             errors:{
+                name:false,
                 subject: false,
                 phone:false,
                 mail:false,
@@ -85,22 +90,28 @@ handleSubmit(e){
     }else{
         this.setState({
             errors:{
+                name: !correctVal.name,
                 subject: !correctVal.subject,
                 phone:!correctVal.phone,
                 mail:!correctVal.mail,
                 text:!correctVal.text
             }
         })
-    }
+    };
      
-} 
+};
 
 validation(){
-    let subject = false
-    let phone = false
-    let mail = false
-    let text = false
-    let validate = false
+    let name = false;
+    let subject = false;
+    let phone = false;
+    let mail = false;
+    let text = false;
+    let validate = false;
+
+    if(this.state.name.length > 2){
+        name = true
+    }
 
     if(this.state.subject.length > 5){
         subject = true
@@ -114,12 +125,12 @@ validation(){
     if(this.state.text.length > 10){
         text = true
     }
-    if(subject && phone && mail && text){
+    if(name && subject && phone && mail && text){
         validate = true
     }
 
-    return({subject,phone,mail,text,validate})
-}
+    return({name,subject,phone,mail,text,validate});
+};
 
 /*setCookie(){
    if(this.props.cookieSet === true){
@@ -128,16 +139,15 @@ validation(){
 }*/
 
 sendMail(){
-
     axios('http://localhost/emilmailer/index.php',{
         method:'post',
-        mode:'cors',
+        mode:'no-cors',
         headers:{'Content-Type':'application/json'},
         data: JSON.stringify(this.state)
     })
     .then(response => console.log(response))
     .catch(error => console.log(error))
-}
+};
 
     render() { 
         return ( 
@@ -147,35 +157,42 @@ sendMail(){
                         <div className='contact-header'><p>Kontakt</p></div>
                         <div className='form-adress'>
                             <div className='form-contact' style={this.state.sent === true ? {display:"none"} : {display:"block"}}>
-                                <p>Zostaw swoje dane a ja oddzwonię.</p>
+                                <p>Masz pytanie ? Wypełnij formularz, oddzwonię w ciągu 24h.</p>
                                 <form onSubmit={this.handleSubmit} noValidate>
+                                    <input 
+                                        type='text'
+                                        value={this.state.name}
+                                        name='name'
+                                        onChange={this.handleChange}                                
+                                        placeholder='Imię'       
+                                    />{this.state.errors.name? <p>Conajmniej 3 znaki</p> : null }
                                     <input
                                         type='text' 
                                         value={this.state.subject}
                                         name='subject'
                                         onChange={this.handleChange}
-                                        placeholder='temat conajmniej 3 znaki'
+                                        placeholder='Temat'
                                     />{this.state.errors.subject? <p>Temat zbyt krótki</p> : null }
                                     <input
                                         type='number' 
                                         value={this.state.phone}
                                         name='phone'
                                         onChange={this.handleChange}
-                                        placeholder='telefon'
+                                        placeholder='Telefon'
                                     />{this.state.errors.phone ? <p>Number zbyt krótki</p> : null }
                                     <input
                                         type='text' 
                                         value={this.state.mail}
                                         name='mail'
                                         onChange={this.handleChange}
-                                        placeholder='mail'
+                                        placeholder='Mail'
                                     />{this.state.errors.mail ? <p>Brak @</p> : null }
                                     <textarea
                                         type='text' 
                                         value={this.state.text}
                                         name='text'
                                         onChange={this.handleChange}
-                                        placeholder='wiadomość'
+                                        placeholder='Wiadomość'
                                     />{this.state.errors.text ? <p>Wiadomość za krótka</p> : null }
                                     <button onClick={this.handleSubmit}>Wyślij</button>
                                 </form>
@@ -187,10 +204,13 @@ sendMail(){
                                 <p>Formularz został wysłany, dziękujemy za kontakt.</p>
                             </div> 
                             <div className='adress'>
-                                <p>Usługi BHP i PPOŻ EMDOM-BHP</p>
-                                <p>Adres: 26-640 Chomentów-Puszcz, Mazowieckie<br/>05-550 Piaseczno</p>
-                                <p>Tel. 123-456-789</p>
-                                <p>Adres e-mail: "EMDOM-BHP"</p>
+                                <p><i className="fas fa-home footer-icon"></i>Usługi BHP i PPOŻ EMDOM-BHP</p>
+                                <p><i className="fas fa-directions footer-icon"></i>Adres:<br/>
+                                        26-640 Chomentów-Puszcz, Mazowieckie<br/>
+                                        05-550 Piaseczno
+                                </p>
+                                <p><i className="fas fa-phone-square footer-icon"></i>Tel. 123-456-789</p>
+                                <p><i className="fas fa-envelope-open footer-icon"></i>Adres e-mail: "EMDOM-BHP"</p>
                             </div>
                         </div>
                     </div>
@@ -204,13 +224,13 @@ const MapStateToProps =(state)=>{
     return{
         cookieSet: state.setCookie
     }
-}
+};
 
 const MapDispatchToProps =(dispatch)=>{
     return{
         setCookie: ()=> dispatch(cookieAction()),
     }
-}
+};
  
 export default connect(MapStateToProps,MapDispatchToProps)(Contact);
 

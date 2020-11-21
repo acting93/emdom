@@ -10,7 +10,7 @@ class Cookies extends Component {
    handleCookie =()=>{
         this.props.setCookie();
             Cookie.set("generalcookie",'test',{expires:7})
-            this.props.checkCookie()
+            this.props.checkCookie();
    }
    
    render(){

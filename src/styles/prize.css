@@ -1,16 +1,3 @@
-.section-prize{
-    height:auto;
-    display: block;
-    padding: 0px !important;
-    background: rgb(175, 153, 153);
-}
-.prize-header{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding:15px;
-    font-size: 30px;
-}
 .prize-container{
     margin:0 auto;
     height:auto;
@@ -20,14 +7,28 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    border: 1px solid black;
+    text-transform: uppercase;
+}
+.section-prize{
+    height:auto;
+    display: block;
+    padding: 0px !important;
+}
+.prize-header{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding:15px;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 .photo-header{
     width: 100%;
     padding: 50px;
     height: auto;
-    background: black;
-    color:white;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.363)), url('../images/bg4.jpg');
+    background-size: cover;
+    color:rgb(238, 238, 238);
 }
 .service-title{
     margin:0 auto;
@@ -53,7 +54,6 @@
     width:400px;
     margin-left: 10px;
     padding: 40px;
-    display: inline-block;
     text-align: center;
     background:none;
     font-weight: 500;
@@ -61,7 +61,8 @@
     color:rgb(255, 166, 0);
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
     opacity: 0.8;
-    background: #000;
+    background: rgb(0, 0, 0);
+    text-transform: uppercase;
 }
 .prize-service:hover{
     background: rgb(255, 255, 255);
@@ -74,35 +75,38 @@
     text-align: center;
     color:white;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 .prize-firm{
-    display: inline-block;
     position: relative;
     margin:10px;
     width:35%;
     height: 400px;
-    padding: px;
     font-weight: 400;
     font-size: 18px;
     color:rgb(0, 0, 0);
-    background: rgb(206, 206, 206);
+    background:url('../images/bg3.jpg') no-repeat;
+    background-size: cover;
 }
 .prize-employee{
     width:100%;
     height:35%;
-    background-color: rgb(185, 0, 0);
+    background-color: rgba(0, 0, 0, 0.74);
     padding: 25px;
+    font-size: 16px;
 }
 .prize-prize{
     width:100%;
     height: 65%;
-    background:url('../images/bg3.jpg');
-    background-size: cover;
 }
 .name-prize{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(255, 255, 255);
     opacity: none;
 }
@@ -156,17 +160,22 @@
     display: block;
     width:100%;
     height: auto;
-    background: rgb(124, 3, 3);
+    background: rgba(0, 0, 0, 0.486)
 }
-.fa-exclamation{
-    font-size: 50px;
-    color:rgb(219, 219, 219);
+.fa-exclamation-circle{
+    position: relative;
+    font-size: 10rem;
+    color:rgb(255, 255, 255);
+    margin: 0 auto;
 }
 .services-description p{
+  text-align: center;
+  margin:0 auto;
+  width: 60%;
   padding: 20px;
   font-size: 18px;
   color:rgb(196, 196, 196);
-  font-weight: 800;
+  font-weight: 500;
   -webkit-text-decoration: dashed;
           text-decoration: dashed;
 }
@@ -190,18 +199,21 @@
         width:40%;
         height: 300px;
     }
-    .name-prize{
-        font-size: 20px;
-    }
     .prize-service{
         width:350px;
         padding:20px;
+        font-size: 20px;
+    }
+    .firm-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 @media(max-width:768px){
     .prize-services{
         display:flex;
-        position: relative;
         width:100%;
         padding: 5px;
     }
@@ -237,13 +249,13 @@
         width: 100%;
         height:auto;
         text-align: center;
-        padding: 5px;
+        padding: 0;
     }
     .prize-firm{
-        width:45%;
+        width:50%;
         height: 300px;
         padding: 5px;
-        margin:0px;
+        margin:0;
         font-weight: 400;
         font-size: 15px;
     }
@@ -259,8 +271,12 @@
         margin-top: 20px;
     }
     .services-description p{
+        width:80%;
         padding: 10px;
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .fa-exclamation-circle{
+        font-size: 5rem;
     }
 }
 @media(max-width:576px){
@@ -271,7 +287,6 @@
         flex-direction: column;
         align-items: center;
     }
-    
     .prize-firm{
         width:80%;
         padding: 0px;
@@ -285,9 +300,15 @@
         float: left;
         margin-top: 15px;
     }
+    .fa-exclamation-circle{
+        font-size: 3rem;
+        left:50%;
+        transform: translateX(-50%);
+    }
     .services-description p{
-        padding: 10px;
-        font-size: 15px;
+        width: 100%;
+        font-size: 13px;
+        text-align: left;
     }
     .docs-container{
         padding: 5px;
@@ -317,13 +338,12 @@
         margin-top: 30px;
         padding: 0;
     }
-   
     .firm-container{
         width: 100%;
         height: auto;
     }
     .prize-firm{
-        width:90%;
+        width:80%;
         height: 180px;
         padding: 0px;
         font-size: 13px;
@@ -347,7 +367,10 @@
     .prize-employee{
         font-size: 12px; 
         padding: 5px;
-        height: auto;
+        height: 30%;
+    }
+    .services-description p{
+       width:100%;
     }
     @media(max-width:300px){
         .prize-firm{

@@ -16,21 +16,20 @@ const Prize = () => {
     
 
 const handleService =()=>{
-    setService(true)
-    setFirm(false)
-    setDocs(false)
-}
+    setService(true);
+    setFirm(false);
+    setDocs(false);
+};
 const handleFirm =()=>{
-    setService(false)
-    setFirm(true)
-    setDocs(false)
-}
+    setService(false);
+    setFirm(true);
+    setDocs(false);
+};
 const handleDocs =()=>{
-    setService(false)
-    setFirm(false)
-    setDocs(true)
-}
-
+    setService(false);
+    setFirm(false);
+    setDocs(true);
+};
 
     return (
          <>
@@ -52,7 +51,7 @@ const handleDocs =()=>{
             </section>
          </>
      );
-}
+};
 
  
 export default Prize;

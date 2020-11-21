@@ -12,19 +12,19 @@ import {connect} from 'react-redux';
 import cookieAction from './actions/cookieAction';
 import Cookie from 'js-cookie';
 
-let alertShow = ''
 
 class App extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {  }
+
   }
 
   componentDidMount(){
     if(Cookie.get('generalcookie')){
       this.props.cookieSet();
     };
-    alertShow = setTimeout(()=>{this.props.setAlert(true)},5000)
+    setTimeout(()=>{this.props.setAlert(true)},5000)
   }
 
  render() { 

@@ -4,7 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
-
+gitignore
+debug.log
+package-lock.json
+/img
+package.json
+README.md
+/src/setupTests.js
+/src/serviceWorker.js
 # testing
 /coverage
 
