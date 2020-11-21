@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2aa30011c30e46bf27011fe216338e8",
+    "revision": "41c0c6ed797183d46cd7305cc20b8cf0",
     "url": "/emdom/index.html"
   },
   {
-    "revision": "2c40e29801a3d22522eb",
+    "revision": "2d8071b7b5ab6c57dfd8",
     "url": "/emdom/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "8eb83bd8d3a8376b0f13",
-    "url": "/emdom/static/css/main.c2078957.chunk.css"
+    "revision": "ca8a0c45d4a2d2481888",
+    "url": "/emdom/static/css/main.8dc1f44e.chunk.css"
   },
   {
-    "revision": "2c40e29801a3d22522eb",
-    "url": "/emdom/static/js/2.5cfd9b27.chunk.js"
+    "revision": "2d8071b7b5ab6c57dfd8",
+    "url": "/emdom/static/js/2.d44b8ddb.chunk.js"
   },
   {
     "revision": "6e422cdd9df9bcc4bfff52e933fb2154",
-    "url": "/emdom/static/js/2.5cfd9b27.chunk.js.LICENSE.txt"
+    "url": "/emdom/static/js/2.d44b8ddb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8eb83bd8d3a8376b0f13",
-    "url": "/emdom/static/js/main.2ee7f193.chunk.js"
+    "revision": "ca8a0c45d4a2d2481888",
+    "url": "/emdom/static/js/main.66455adf.chunk.js"
   },
   {
     "revision": "f29913becda2e51be944",
@@ -50,5 +50,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a1b45a8ba2832399aeb95941d81c4643",
     "url": "/emdom/static/media/embud2.a1b45a8b.png"
+  },
+  {
+    "revision": "dc865169ed3d3d3d6e65306afcae5106",
+    "url": "/emdom/static/media/virus.dc865169.jpg"
   }
 ]);
