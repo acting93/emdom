@@ -4,6 +4,8 @@ import Cookie from 'js-cookie';
 import axios from 'axios';
 import {connect} from 'react-redux';
 import cookieAction from '../actions/cookieAction';
+import FormSent from './contactComponents/FormSent';
+import FormNotSent from './contactComponents/FormNotSent';
 
 class Contact extends Component {
     interval = ''
@@ -24,7 +26,7 @@ class Contact extends Component {
                 mail:false,
                 text:false
             },
-            sent:false
+            sent:null,
          }
          this.handleChange = this.handleChange.bind(this);
          this.handleSubmit = this.handleSubmit.bind(this);
@@ -40,28 +42,52 @@ handleChange(e){
     const name = e.target.name;
     this.setState({
         [name]:e.target.value
-    })
+    });
 };
 
 hideElement(){
-    if(this.state.sent === true){
+    const {sent,count} = this.state; 
+    if(sent === (false || sent) ){
         this.setState(prevstate =>({
-            count: prevstate.count += -1
+            count: prevstate.count -= 1
         }))
-        if(this.state.count < 0){
+        if(count < 0){
             this.setState({
-                sent:false,
+                sent:null,
                 count:3
             })
-            clearInterval(this.interval)
+            return clearInterval(this.interval)
         };
     };
 };
 
 start(){
-        this.interval = setInterval(() => {
-            this.hideElement();
-        }, 1000);
+    this.interval = setInterval(() => {
+        this.hideElement();
+    }, 1000);
+};
+
+sendMail(){
+    axios('http://localhost/emilmailer/index.php',{
+        method:'post',
+        mode:'no-cors',
+        headers:{'Content-Type':'application/json'},
+        data: JSON.stringify(this.state)
+    })
+    .then(response =>{
+        if(response.status === 200){
+            this.setState({
+               sent:true
+            });
+            this.start();
+        }
+    })
+    .catch(error =>{
+        this.setState({
+            sent:false
+        });
+        this.start()
+    });
 };
 
 
@@ -69,11 +95,9 @@ handleSubmit(e){
     e.preventDefault();
     const correctVal = this.validation();
     if(correctVal.validate){
-        this.start();
         //this.setCookie();
         this.sendMail();
         this.setState({
-            sent:true,
             name:'',
             subject:'',
             phone:'',
@@ -90,8 +114,8 @@ handleSubmit(e){
     }else{
         this.setState({
             errors:{
-                name: !correctVal.name,
-                subject: !correctVal.subject,
+                name:!correctVal.name,
+                subject:!correctVal.subject,
                 phone:!correctVal.phone,
                 mail:!correctVal.mail,
                 text:!correctVal.text
@@ -138,71 +162,59 @@ validation(){
   }
 }*/
 
-sendMail(){
-    axios('http://localhost/emilmailer/index.php',{
-        method:'post',
-        mode:'no-cors',
-        headers:{'Content-Type':'application/json'},
-        data: JSON.stringify(this.state)
-    })
-    .then(response => console.log(response))
-    .catch(error => console.log(error))
-};
 
     render() { 
+        console.log(this.state.count)
+        const {sent,name,subject,phone,mail,text,errors} = this.state;
         return ( 
             <>  
                 <section className='contact-content col-12'>
                     <div className='contact-background col-12 col-xl-10'>
                         <div className='contact-header'><p>Kontakt</p></div>
                         <div className='form-adress'>
-                            <div className='form-contact' style={this.state.sent === true ? {display:"none"} : {display:"block"}}>
+                            <div className='form-contact' style={sent === true || sent === false ? {display:"none"} : {display:"block"}}>
                                 <p>Masz pytanie ? Wypełnij formularz, oddzwonię w ciągu 24h.</p>
                                 <form onSubmit={this.handleSubmit} noValidate>
                                     <input 
                                         type='text'
-                                        value={this.state.name}
+                                        value={name}
                                         name='name'
                                         onChange={this.handleChange}                                
                                         placeholder='Imię'       
-                                    />{this.state.errors.name? <p>Conajmniej 3 znaki</p> : null }
+                                    />{errors.name? <p>Conajmniej 3 znaki</p> : null }
                                     <input
                                         type='text' 
-                                        value={this.state.subject}
+                                        value={subject}
                                         name='subject'
                                         onChange={this.handleChange}
                                         placeholder='Temat'
-                                    />{this.state.errors.subject? <p>Temat zbyt krótki</p> : null }
+                                    />{errors.subject? <p>Temat zbyt krótki</p> : null }
                                     <input
                                         type='number' 
-                                        value={this.state.phone}
+                                        value={phone}
                                         name='phone'
                                         onChange={this.handleChange}
                                         placeholder='Telefon'
-                                    />{this.state.errors.phone ? <p>Number zbyt krótki</p> : null }
+                                    />{errors.phone ? <p>Number zbyt krótki</p> : null }
                                     <input
                                         type='text' 
-                                        value={this.state.mail}
+                                        value={mail}
                                         name='mail'
                                         onChange={this.handleChange}
                                         placeholder='Mail'
-                                    />{this.state.errors.mail ? <p>Brak @</p> : null }
+                                    />{errors.mail ? <p>Brak @</p> : null }
                                     <textarea
                                         type='text' 
-                                        value={this.state.text}
+                                        value={text}
                                         name='text'
                                         onChange={this.handleChange}
                                         placeholder='Wiadomość'
-                                    />{this.state.errors.text ? <p>Wiadomość za krótka</p> : null }
+                                    />{errors.text ? <p>Wiadomość za krótka</p> : null }
                                     <button onClick={this.handleSubmit}>Wyślij</button>
                                 </form>
                             </div>
-                            <div className='info-sent' style={this.state.sent === true ? {display:"block"}: {display:"none"}}>
-                                <div className='icon-sent'>
-                                    <i className="fa fa-check ok-icon" aria-hidden="true"></i>
-                                </div>
-                                <p>Formularz został wysłany, dziękujemy za kontakt.</p>
-                            </div> 
+                            {sent === true ? <FormSent /> : null}
+                            {sent === false ? <FormNotSent /> : null}
                             <div className='adress'>
                                 <p><i className="fas fa-home footer-icon"></i>Usługi BHP i PPOŻ EMDOM-BHP</p>
                                 <p><i className="fas fa-directions footer-icon"></i>Adres:<br/>
