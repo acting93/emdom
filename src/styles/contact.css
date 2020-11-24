@@ -7,7 +7,7 @@
 }
 .contact-background{
     width: 100%;
-    height: auto;
+    height: 720px;
     margin: 0 auto;
     background: rgba(3, 0, 0, 0.822);
     padding: 5px;
@@ -58,8 +58,8 @@ input[type=number]::-webkit-inner-spin-button{
 textarea {
     border:none;
     outline:none;
-    max-height: 300px;
-    min-height: 300px;
+    max-height: 200px;
+    min-height: 200px;
     width: 100%;
     padding: 10px;
     color: white;
@@ -76,10 +76,10 @@ textarea {
     box-shadow: 0px 0px 3px rgb(255, 255, 255);
     color: white;
     width:200px;
-}
+} 
 .info-sent{
     width:50%;
-    height: 400px;
+    height: 500px;
     text-align: center;
     display: block;
     padding: 0;
@@ -115,29 +115,72 @@ textarea {
     width: 50%;
     height:auto;
     border-left:5px solid rgb(196, 10, 10);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.adress p{
-    justify-content: left;
-    margin: 0 auto;
+.adress-element{
+    margin: 5px;
     position: relative;
-    width: 80%;
-    top:10%;
-    transform: translateY(-10%);
-    font-weight: 600;
-    font-size: 20px;
-    color: rgb(226, 226, 226);
-    margin-bottom:20px;
+    width: 45%;
+    height:45%;
+    background: rgba(107, 2, 2, 0.788);
     display: block;
+    border-radius: 10%;
 }
-.adress p:first-child{
+.adress-element .fas{
+    font-size: 35px;
+    margin-top:40px ;
+    color:rgb(221, 190, 17);
+}
+.adress-element-title{
+    color:rgb(228, 187, 4);
+    font-weight: 500;
     text-transform: uppercase;
-    color:rgb(221, 190, 17);
-    font-size: 25px;
 }
-.adress .fas{
-    font-size: 26px;
-    margin-right: 20px;
+.adress-element p{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 14px;
+}
+.spinner-content{
+    width:50%;
+    height: 400px;
+}
+.spinner-border{
+    position: relative;
+    left:45%;
+    top:45%;
     color:rgb(221, 190, 17);
+}
+@media(max-width:1400px){
+    .adress{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 5px;
+        overflow: hidden;
+    }
+    .adress-element{
+        margin-top: 0;
+        width: 95%;
+        height: 25%;
+        margin: none;
+        border-radius: 0%;
+        padding: 5px;
+    }
+    .adress-element .fas{
+        position: absolute;
+        font-size: 35px;
+        left:5%;
+        margin-top:40px;
+        color:rgb(221, 190, 17);
+    }
+    .adress-element p{
+        margin-top: 15px;
+    }
 }
 
 @media(max-width:992px){
@@ -154,12 +197,11 @@ textarea {
     .info-sent p{
         padding: 25px;
     }
-    .adress p{
-        font-size: 16px;
-        width: 90%;
+    .adress-element .fas{
+        font-size: 28px; 
     }
-    .adress p:first-child{
-        font-size: 18px;
+    .adress-element p{
+        font-size: 14px;
     }
 }
 @media(max-width:768px){
