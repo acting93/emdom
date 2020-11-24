@@ -13,9 +13,9 @@ const Footer = () => {
                         <ul>
                             <li><p>Dane kontaktowe:</p></li>
                             <li><p><i className="fas fa-home footer-icon"></i></p><p className="footer-info">EMDOM-BHP</p></li>
-                            <li><p><i className="fas fa-directions footer-icon"></i></p><p className="footer-info">26-640 Chomentów-Puszcz, Mazowieckie</p></li>
-                            <li><p><i className="fas fa-phone-square footer-icon"></i></p><p className="footer-info">123-456-789</p></li>
-                            <li><p><i className="fas fa-envelope-open footer-icon"></i></p><p className="footer-info">EMDOM-BHP</p></li>
+                            <li><p><i className="fas fa-directions footer-icon"></i></p><p className="footer-info">26-640 Chomentów-Puszcz</p></li>
+                            <li><p><i className="fas fa-phone-square footer-icon"></i></p><p className="footer-info">503544971</p></li>
+                            <li><p><i className="fas fa-envelope-open footer-icon"></i></p><p className="footer-info">emdom.bhp@gmail.com</p></li>
                         </ul>
                     </div>
                     <div className='footer-nav col-12 col-lg-3'>

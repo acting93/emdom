@@ -84,6 +84,7 @@ sendMail(){
                spinner:false,
             });
             this.start();
+            console.log(response);
         }
     })
     .catch(error =>{
@@ -94,7 +95,6 @@ sendMail(){
         this.start()
     });
 };
-
 
 handleSubmit(e){
     e.preventDefault();
@@ -139,6 +139,9 @@ validation(){
     let text = false;
     let validate = false;
 
+    const phoneValidation = new RegExp(/[0-9]+$|^$/g)
+    const emailValidation = new RegExp(/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/g);
+
     if(this.state.name.length > 2){
         name = true
     }
@@ -146,10 +149,10 @@ validation(){
     if(this.state.subject.length > 5){
         subject = true
     }
-    if(this.state.phone.length > 8){
+    if(phoneValidation.test(this.state.phone)){
         phone = true
     }
-    if(this.state.mail.indexOf('@') !== -1){
+    if(emailValidation.test(this.state.mail)){
         mail = true
     }
     if(this.state.text.length > 10){
@@ -180,42 +183,48 @@ validation(){
                             <div className='form-contact' style={sent === true || sent === false || spinner === true ? {display:"none"} : {display:"block"}}>
                                 <p>Masz pytanie ? Wypełnij formularz, oddzwonię w ciągu 24h.</p>
                                 <form onSubmit={this.handleSubmit} noValidate>
-                                    <input 
-                                        type='text'
-                                        value={name}
-                                        name='name'
-                                        onChange={this.handleChange}                                
-                                        placeholder={errors.name? 'Conajmniej 3 znaki' : 'Imię' }       
-                                    />
+                                    <p className='error-info'>{errors.name? 'Conajmniej 3 znaki' : null }</p>
+                                        <input 
+                                            type='text'
+                                            value={name}
+                                            name='name'
+                                            onChange={this.handleChange}                                
+                                            placeholder='Imię'       
+                                        />
+                                    <p className='error-info'>{errors.subject? 'Temat zbyt krótki' : null }</p>
                                     <input
                                         type='text' 
                                         value={subject}
                                         name='subject'
                                         onChange={this.handleChange}
-                                        placeholder={errors.subject? 'Temat zbyt krótki' : 'Temat'}
+                                        placeholder='Temat'
                                     />
+                                    <p className='error-info'>{errors.phone ? 'Numer zbyt krótki' : null }</p>
                                     <input
                                         type='number' 
                                         value={phone}
                                         name='phone'
                                         onChange={this.handleChange}
-                                        placeholder={errors.phone ? 'Number zbyt krótki' : 'Telefon' }
+                                        placeholder='Telefon - niewymagane'
+                                        max={12}
                                     />
+                                    <p className='error-info'>{errors.mail ? 'Niepoprawna struktra adresu' : null }</p>
                                     <input
-                                        type='text' 
+                                        type='email' 
                                         value={mail}
                                         name='mail'
                                         onChange={this.handleChange}
-                                        placeholder={errors.mail ? 'Brak @' : 'Adres E-mail' }
+                                        placeholder='Adres E-mail'
                                     />
+                                    <p className='error-info'>{errors.text ? 'Wiadomość za krótka' : null }</p>
                                     <textarea
                                         type='text' 
                                         value={text}
                                         name='text'
                                         onChange={this.handleChange}
-                                        placeholder={errors.text ? 'Wiadomość za krótka' : 'Wiadomość' }
-                                    />
-                                    <button onClick={this.handleSubmit}>Wyślij</button>
+                                        placeholder='Wiadomość'
+                                    />                                    
+                                    <button className='send-button' onClick={this.handleSubmit}>Wyślij</button>
                                 </form>
                             </div>
                             {spinner ?
