@@ -1,30 +1,31 @@
 {
   "files": {
-    "main.css": "/emdom/static/css/main.3ec7e125.chunk.css",
-    "main.js": "/emdom/static/js/main.31f39839.chunk.js",
-    "main.js.map": "/emdom/static/js/main.31f39839.chunk.js.map",
+    "main.css": "/emdom/static/css/main.adfab8db.chunk.css",
+    "main.js": "/emdom/static/js/main.33906e15.chunk.js",
+    "main.js.map": "/emdom/static/js/main.33906e15.chunk.js.map",
     "runtime-main.js": "/emdom/static/js/runtime-main.27c0eeae.js",
     "runtime-main.js.map": "/emdom/static/js/runtime-main.27c0eeae.js.map",
     "static/css/2.11829350.chunk.css": "/emdom/static/css/2.11829350.chunk.css",
-    "static/js/2.30263903.chunk.js": "/emdom/static/js/2.30263903.chunk.js",
-    "static/js/2.30263903.chunk.js.map": "/emdom/static/js/2.30263903.chunk.js.map",
+    "static/js/2.973cddfb.chunk.js": "/emdom/static/js/2.973cddfb.chunk.js",
+    "static/js/2.973cddfb.chunk.js.map": "/emdom/static/js/2.973cddfb.chunk.js.map",
     "index.html": "/emdom/index.html",
-    "precache-manifest.60e44d26daff25381e8dceaece9346b9.js": "/emdom/precache-manifest.60e44d26daff25381e8dceaece9346b9.js",
+    "precache-manifest.e5dfc15e733f6739c384c8c82a504eb0.js": "/emdom/precache-manifest.e5dfc15e733f6739c384c8c82a504eb0.js",
     "service-worker.js": "/emdom/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/emdom/static/css/2.11829350.chunk.css.map",
-    "static/css/main.3ec7e125.chunk.css.map": "/emdom/static/css/main.3ec7e125.chunk.css.map",
-    "static/js/2.30263903.chunk.js.LICENSE.txt": "/emdom/static/js/2.30263903.chunk.js.LICENSE.txt",
+    "static/css/main.adfab8db.chunk.css.map": "/emdom/static/css/main.adfab8db.chunk.css.map",
+    "static/js/2.973cddfb.chunk.js.LICENSE.txt": "/emdom/static/js/2.973cddfb.chunk.js.LICENSE.txt",
     "static/media/homepage.css": "/emdom/static/media/bg5.0b985298.jpg",
     "static/media/App.css": "/emdom/static/media/bg3.fde84f85.jpg",
-    "static/media/prize.css": "/emdom/static/media/bg6.766bce0c.jpg",
+    "static/media/footer.css": "/emdom/static/media/bg6.766bce0c.jpg",
     "static/media/embud2.png": "/emdom/static/media/embud2.a1b45a8b.png",
+    "static/media/react.png": "/emdom/static/media/react.4ade5cac.png",
     "static/media/alert.css": "/emdom/static/media/virus.dc865169.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.27c0eeae.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.30263903.chunk.js",
-    "static/css/main.3ec7e125.chunk.css",
-    "static/js/main.31f39839.chunk.js"
+    "static/js/2.973cddfb.chunk.js",
+    "static/css/main.adfab8db.chunk.css",
+    "static/js/main.33906e15.chunk.js"
   ]
 }
