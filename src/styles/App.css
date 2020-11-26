@@ -1,6 +1,7 @@
 body{
     margin: auto;
     padding:auto;
+    font-family: 'Open Sans', sans-serif;
 }
 .container-fluid{
     position: relative;

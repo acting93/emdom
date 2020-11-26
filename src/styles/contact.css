@@ -10,6 +10,7 @@
     height: auto;
     margin: 0 auto;
     background: rgba(3, 0, 0, 0.822);
+    border-top: 2px solid rgb(255, 125, 3);
     padding: 5px;
 }
 .contact-header{
@@ -55,8 +56,12 @@
     font-size: 12px;
     text-transform: uppercase;
 }
-input[type=number]::-webkit-inner-spin-button{
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
     -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
 }
 textarea {
     border:none;

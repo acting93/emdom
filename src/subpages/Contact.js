@@ -84,7 +84,6 @@ sendMail(){
                spinner:false,
             });
             this.start();
-            console.log(response);
         }
     })
     .catch(error =>{
@@ -92,8 +91,7 @@ sendMail(){
             sent:false,
             spinner:false
         });
-        this.start()
-        console.log(error)
+        this.start();
     });
 };
 

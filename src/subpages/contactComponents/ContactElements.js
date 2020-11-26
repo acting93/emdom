@@ -9,7 +9,7 @@ const ContactElements = () => {
                 <i className="fas fa-home footer-icon"></i>
                 <p className='adress-element-title'>Firma</p>
                 <p>EMDOM-BHP</p>
-                <p>Usługi BHP i PPOŻ EMDOM-BHP</p>
+                <p>Usługi BHP i PPOŻ</p>
             </div>
             <div className='adress-element'>
                 <i className="fas fa-directions footer-icon"></i>

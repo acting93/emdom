@@ -9,9 +9,9 @@ class Cookies extends Component {
 
    handleCookie =()=>{
         this.props.setCookie();
-            Cookie.set("generalcookie",'test',{expires:7})
-            this.props.checkCookie();
-   }
+        Cookie.set("generalcookie",'Cookies Pages',{expires:7});
+        this.props.checkCookie();
+   };
    
    render(){
         return (
@@ -22,8 +22,8 @@ class Cookies extends Component {
                 </div>
             </>
         );
-        }
-}
+        };
+};
 
 const mapStateToProps =(state)=>{
     return{

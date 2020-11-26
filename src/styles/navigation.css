@@ -2,10 +2,10 @@
     width: 100%;
     height:120px;
     padding: 0px;
-    font-family: 'Baloo Chettan 2';
     background:rgb(0, 0, 0);
     top:0;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
 }
 .navigation-elements{
     margin: 0 auto;
@@ -161,7 +161,8 @@
         font-size: 20px;
     }
     .sticky ul li{
-        clip-path: none;
+        -webkit-clip-path: none;
+                clip-path: none;
         background: none;
     }
 }
@@ -193,7 +194,8 @@
         width:30%;
         padding: 0px;
         margin: 0px;
-        clip-path: none;
+        -webkit-clip-path: none;
+                clip-path: none;
         background: none;
     }
     .menu ul li:last-child{
