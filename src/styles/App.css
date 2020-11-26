@@ -1,15 +1,11 @@
 body{
     margin: auto;
     padding:auto;
-    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.144)), url('../images/bg3.jpg')no-repeat;
-    background-position: top;
-    background-size: center;
 }
 .container-fluid{
     position: relative;
     padding:none;
 }
-
 .cookie-div{
     width:100%;
     height:auto;

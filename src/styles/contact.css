@@ -23,11 +23,8 @@
 .form-adress{
     width:100%;
     height:auto;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
+    flex-direction: row;
     color: white;
 }
 .form-contact{
@@ -171,7 +168,7 @@ textarea {
         overflow: hidden;
     }
     .adress-element{
-        margin-top: 0;
+        top:0%;
         width: 95%;
         height:130px;
         margin: none;
