@@ -10,7 +10,7 @@ class Homepage extends Component {
     render() {
         return (
             <> 
-                <div className='homepage'>
+                <div className='homepage-slider'>
                     <span><p>Usługi BHP i PPOŻ</p></span><br/>
                     <span><p>Bezpieczeństwo i ochrona pracy</p></span>
                 </div>

@@ -71,7 +71,7 @@ start(){
 };
 
 sendMail(){
-    axios('http://localhost/emilmailer/index.php',{
+    axios('../mailer/index.php',{
         method:'post',
         mode:'no-cors',
         headers:{'Content-Type':'application/json'},
@@ -93,6 +93,7 @@ sendMail(){
             spinner:false
         });
         this.start()
+        console.log(error)
     });
 };
 
@@ -139,7 +140,7 @@ validation(){
     let text = false;
     let validate = false;
 
-    const phoneValidation = new RegExp(/[0-9]+$|^$/g)
+    const phoneValidation = new RegExp(/[0-9]+$|^$/g);
     const emailValidation = new RegExp(/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/g);
 
     if(this.state.name.length > 2){
