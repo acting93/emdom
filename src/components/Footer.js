@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='preparation col-12'>
-                    <p>Przygotowanie i opracowanie: Wojciech Żuwalski - &copy;2020</p>
+                    <p>Przygotowanie: Wojciech Żuwalski - &copy;2020</p>
                     <img src={react} alt=''/>
                 </div>
             </footer>

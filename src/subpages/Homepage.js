@@ -44,10 +44,10 @@ class Homepage extends Component {
                 <section className='container-homepage col-12'>
                     <div className="homepage-info col-xl-12">
                         <div className="info">
-                            <p>Firma Emdom-BHP zapewnia bezpieczeństwo w zakresie obsługi różnych podmiotów gospodarczych dotyczy to zarówno firm o działalności typowo biurowej jak i obsługi BHP dużych inwestycji budowlanych.</p>
-                            <p>Świadczymy usługi BHP na najwyższym poziomie, z pełnym zaangażowaniem, na bieżąco szkoli w zakresie zarządzania bezpieczeństwem i higieną pracy.</p>
-                            <p>Standardem jest zadowolenie pracowników i pracodawców z przeprowadzonych szkoleń. Stosuje jasne i zrozumiałe, a zarazem skuteczne rozwiązania z zakresu bezpieczeństwa pracy zgodnie z polskim prawodawstwem. Usługi świadczy doraźnie wedle potrzeb lub poprzez umowę współpracy.</p>
-                            <p>Oferuję usługi BHP oraz PPOŻ na terenie Warszawy, Radomia, Skaryszewa oraz okolic tych miast. </p>
+                            <p>Firma Emdom-BHP zapewnia bezpieczeństwo w zakresie obsługi różnych podmiotów gospodarczych, dotyczy to zarówno firm o działalności typowo biurowej, jak i obsługi BHP dużych inwestycji budowlanych.</p>
+                            <p>Świadczymy usługi BHP na najwyższym poziomie, z pełnym zaangażowaniem, na bieżąco szkolimy w zakresie zarządzania bezpieczeństwem i higieną pracy.</p>
+                            <p>Standardem jest zadowolenie pracowników i pracodawców z przeprowadzonych szkoleń. Stosuję jasne i zrozumiałe, a zarazem skuteczne rozwiązania z zakresu bezpieczeństwa pracy zgodnie z polskim prawodawstwem. Usługi świadczymy doraźnie wedle potrzeb lub poprzez umowę współpracy.</p>
+                            <p>Oferujemy usługi BHP oraz PPOŻ na terenie Warszawy, Radomia, Skaryszewa oraz okolic tych miast. Jesteśmy również otwarci na współpracę na terenie całego kraju. </p>
                         </div>
                     </div>
                 </section>
