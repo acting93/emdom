@@ -36,9 +36,8 @@
     height:auto;
     padding: 20px !important;
     display: flex;
-    flex-direction: column;
-            flex-direction: row;
-   box-shadow: 0 -10px 10px rgb(0, 0, 0);
+    flex-direction: row;
+    box-shadow: 0 -10px 10px rgb(0, 0, 0);
 }
 .container-homepage:nth-child(2){
     background: rgb(97, 97, 97);

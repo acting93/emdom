@@ -59,12 +59,12 @@
         },
         {
             "id":7,
-            "name":"Opracowanie dokumentacji związanej z wypadkami przy pracy – od 200,00 do 500,00 PLN  (cena zależy od wypadku)",
+            "name":"Opracowanie dokumentacji związanej z wypadkami przy pracy – cena zależy od wypadku",
             "prize":"od 200,00 do 500,00 PLN"
         },
         {
             "id":8,
-            "name":"Tworzenie instrukcji BHP i Ppoż.",
+            "name":"Tworzenie instrukcji BHP i PPOŻ.",
             "prize":"od 15,00 PLN "
         },
         {
@@ -84,7 +84,7 @@
         },
         {
             "id":12,
-            "name":"ocena i analiza stanu BHP",
+            "name":"Ocena i analiza stanu BHP",
             "prize":"od 150,00 PLN "
         },
         {

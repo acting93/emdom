@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
 import './styles/App.css';
 import Navigation from './components/Navigation';
 import Container from './components/Container';
@@ -17,15 +17,14 @@ class App extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {  }
-
-  }
+  };
 
   componentDidMount(){
     if(Cookie.get('generalcookie')){
       this.props.cookieSet();
     };
-    setTimeout(()=>{this.props.setAlert(true)},5000)
-  }
+    setTimeout(()=>{this.props.setAlert(true)},5000);
+  };
 
  render() { 
     return ( 

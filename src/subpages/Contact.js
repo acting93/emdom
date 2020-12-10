@@ -59,7 +59,7 @@ hideElement(){
                 sent:null,
                 count:3
             })
-            return clearInterval(this.interval)
+            return clearInterval(this.interval);
         };
     };
 };
@@ -71,7 +71,7 @@ start(){
 };
 
 sendMail(){
-    axios('../mailer/index.php',{
+    axios('http://localhost/emilmailer/index.php' ,{
         method:'post',
         mode:'no-cors',
         headers:{'Content-Type':'application/json'},
@@ -182,15 +182,14 @@ validation(){
                             <div className='form-contact' style={sent === true || sent === false || spinner === true ? {display:"none"} : {display:"block"}}>
                                 <p>Masz pytanie ? Wypełnij formularz, oddzwonię w ciągu 24h.</p>
                                 <form onSubmit={this.handleSubmit} noValidate>
+                                    <input 
+                                        type='text'
+                                        value={name}
+                                        name='name'
+                                        onChange={this.handleChange}                                
+                                        placeholder='Imię'       
+                                    />
                                     <p className='error-info'>{errors.name? 'Conajmniej 3 znaki' : null }</p>
-                                        <input 
-                                            type='text'
-                                            value={name}
-                                            name='name'
-                                            onChange={this.handleChange}                                
-                                            placeholder='Imię'       
-                                        />
-                                    <p className='error-info'>{errors.subject? 'Temat zbyt krótki' : null }</p>
                                     <input
                                         type='text' 
                                         value={subject}
@@ -198,7 +197,7 @@ validation(){
                                         onChange={this.handleChange}
                                         placeholder='Temat'
                                     />
-                                    <p className='error-info'>{errors.phone ? 'Numer zbyt krótki' : null }</p>
+                                    <p className='error-info'>{errors.subject? 'Temat zbyt krótki' : null }</p>
                                     <input
                                         type='number' 
                                         value={phone}
@@ -207,7 +206,7 @@ validation(){
                                         placeholder='Telefon - niewymagane'
                                         max={12}
                                     />
-                                    <p className='error-info'>{errors.mail ? 'Niepoprawna struktra adresu' : null }</p>
+                                    <p className='error-info'>{errors.phone ? 'Numer zbyt krótki' : null }</p>
                                     <input
                                         type='email' 
                                         value={mail}
@@ -215,14 +214,15 @@ validation(){
                                         onChange={this.handleChange}
                                         placeholder='Adres E-mail'
                                     />
-                                    <p className='error-info'>{errors.text ? 'Wiadomość za krótka' : null }</p>
+                                    <p className='error-info'>{errors.mail ? 'Niepoprawna struktra adresu' : null }</p>
                                     <textarea
                                         type='text' 
                                         value={text}
                                         name='text'
                                         onChange={this.handleChange}
                                         placeholder='Wiadomość'
-                                    />                                    
+                                    />
+                                    <p className='error-info'>{errors.text ? 'Wiadomość za krótka' : null }</p>                                    
                                     <button className='send-button' onClick={this.handleSubmit}>Wyślij</button>
                                 </form>
                             </div>

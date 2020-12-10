@@ -33,8 +33,8 @@ class Homepage extends Component {
                                 <ul>
                                     <li>wdrażanie systemów bezpieczeństwa</li>
                                     <li>przeprowadzanie kontroli stanu urządzeń technicznych BHP i PPOŻ</li>
-                                    <li>zarządzanie bezpieczeństwem i ochroną pracy wykorzystując najnowsze technologie i rozwiązania techniczne.</li>
-                                    <li>dobieranie odpowiednich rozwiązań dla obniżenia kosztów w firmie, a tym samym zwiększenie wydajności.</li>
+                                    <li>zarządzanie bezpieczeństwem i ochroną pracy wykorzystując najnowsze technologie i rozwiązania techniczne</li>
+                                    <li>dobieranie odpowiednich rozwiązań dla obniżenia kosztów w firmie, a tym samym zwiększenie wydajności</li>
                                 </ul>
                             </span>
                         </div>
