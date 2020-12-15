@@ -71,7 +71,7 @@ start(){
 };
 
 sendMail(){
-    axios('http://localhost/emilmailer/index.php' ,{
+    axios('http://emdombhp.pl/mailer/index.php' ,{
         method:'post',
         mode:'no-cors',
         headers:{'Content-Type':'application/json'},

@@ -6,22 +6,22 @@
   "dir":"ltr",
   "icons": [
     {
-      "src": "icons/64x64.png",
+      "src": "iconsManifest/64x64.png",
       "sizes": "64x64",
       "type": "image/png"
     },
     {
-      "src": "icons/192x192.png",
+      "src": "iconsManifest/192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icons/512x512.png",
+      "src": "iconsManifest/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "http://emdombhp.pl/",
   "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#000000"
