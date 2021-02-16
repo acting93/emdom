@@ -59,7 +59,7 @@
     text-decoration: none;
     color:rgb(226, 226, 226);
 }
-.footer ul li .fas{
+.footer ul li .fa{
     display:inline-block;
     margin-right: 10px;
     font-size: 20px;
@@ -164,7 +164,7 @@
         height:50%;
         text-align: center;
     }
-    .footer ul li .fas{
+    .footer ul li .fa{
         margin-top: 5px;
         display: block;
     }
@@ -230,7 +230,7 @@
         padding: 10px;
         top:0%;
     }
-    .footer ul li .fas{
+    .footer ul li .fa{
         margin: 0 auto;
         position: relative;
     }

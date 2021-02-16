@@ -13,10 +13,10 @@ const Footer = () => {
                     <div className="footer-contact col-12 col-sm-8 col-lg-6">
                         <p className='footer-contact-title'>Dane kontaktowe:</p>
                         <ul>
-                            <li><i className="fas fa-home footer-icon"></i><p className="footer-info">EMDOM-BHP</p></li>
-                            <li><i className="fas fa-directions footer-icon"></i><p className="footer-info">26-640 Chomentów-Puszcz,<br/>05-500 Piaseczno</p></li>
-                            <li><i className="fas fa-phone-square footer-icon"></i><p className="footer-info">503544971</p></li>
-                            <li><i className="fas fa-envelope-open footer-icon"></i><p className="footer-info">emdom.bhp@gmail.com</p></li>
+                            <li><i className="fa fa-home footer-icon"></i><p className="footer-info">EMDOM-BHP</p></li>
+                            <li><i className="fa fa-automobile footer-icon"></i><p className="footer-info">26-640 Chomentów-Puszcz,<br/>05-500 Piaseczno</p></li>
+                            <li><i className="fa fa-phone-square footer-icon"></i><p className="footer-info">503544971</p></li>
+                            <li><i className="fa fa-envelope-open footer-icon"></i><p className="footer-info">emdom.bhp@gmail.com</p></li>
                         </ul>
                     </div>
                     <div className='footer-nav col-12 col-lg-3'>

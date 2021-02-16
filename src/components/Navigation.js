@@ -77,13 +77,13 @@ class Navigation extends Component{
                                 <div className='contact-container'>
                                     <ul style={active === true ? {display:"flex"}: null}>
                                         <li>
-                                            <NavLink exact to='/' onClick={this.handleActive} activeStyle={{color:"orange"}}><i className="fas fa-home li-icon"></i>Strona Główna</NavLink>
+                                            <NavLink exact to='/' onClick={this.handleActive} activeStyle={{color:"orange"}}><i className="fa fa-home fa-home li-icon"></i>Strona Główna</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to='/prize' onClick={this.handleActive} activeStyle={{color:"orange"}}><i className="fas fa-euro-sign li-icon"></i>Cennik i Usługi</NavLink>
+                                            <NavLink to='/prize' onClick={this.handleActive} activeStyle={{color:"orange"}}><i className="fa fa-eur li-icon"></i>Cennik i Usługi</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to='/contact' onClick={this.handleActive} activeStyle={{color:"orange"}}><i className="fas fa-mobile li-icon"></i>Kontakt</NavLink>
+                                            <NavLink to='/contact' onClick={this.handleActive} activeStyle={{color:"orange"}}><i className="fa fa-phone-square li-icon"></i>Kontakt</NavLink>
                                         </li>
                                     </ul>
                                 </div>

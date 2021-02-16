@@ -30,14 +30,14 @@ const mapStateToProps =(state)=>{
         cookieSet: state.setCookie,
         cookieCheck: state.checkCookie
     }
-}
+};
 
 const mapDispatchToProps =(dispatch)=>{
     return{
         setCookie: ()=> dispatch(cookieAction()),
         checkCookie: ()=>dispatch(checkCookie())
     }
-}
+};
 
  
 export default connect(mapStateToProps,mapDispatchToProps)(Cookies);
