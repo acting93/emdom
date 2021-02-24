@@ -1,30 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.94d1d820.chunk.css",
-    "main.js": "/static/js/main.77fe8d21.chunk.js",
-    "main.js.map": "/static/js/main.77fe8d21.chunk.js.map",
+    "main.css": "/static/css/main.76e4a2ba.chunk.css",
+    "main.js": "/static/js/main.3f4c1f55.chunk.js",
+    "main.js.map": "/static/js/main.3f4c1f55.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8a5e5e17.js",
     "runtime-main.js.map": "/static/js/runtime-main.8a5e5e17.js.map",
     "static/css/2.11829350.chunk.css": "/static/css/2.11829350.chunk.css",
-    "static/js/2.c6b8216a.chunk.js": "/static/js/2.c6b8216a.chunk.js",
-    "static/js/2.c6b8216a.chunk.js.map": "/static/js/2.c6b8216a.chunk.js.map",
+    "static/js/2.52e28712.chunk.js": "/static/js/2.52e28712.chunk.js",
+    "static/js/2.52e28712.chunk.js.map": "/static/js/2.52e28712.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.56aba670ee66f2e311a7ab74e9b71b5f.js": "/precache-manifest.56aba670ee66f2e311a7ab74e9b71b5f.js",
+    "precache-manifest.05aa0eab9d1df8d997617663339ebd48.js": "/precache-manifest.05aa0eab9d1df8d997617663339ebd48.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/static/css/2.11829350.chunk.css.map",
-    "static/css/main.94d1d820.chunk.css.map": "/static/css/main.94d1d820.chunk.css.map",
-    "static/js/2.c6b8216a.chunk.js.LICENSE.txt": "/static/js/2.c6b8216a.chunk.js.LICENSE.txt",
+    "static/css/main.76e4a2ba.chunk.css.map": "/static/css/main.76e4a2ba.chunk.css.map",
+    "static/js/2.52e28712.chunk.js.LICENSE.txt": "/static/js/2.52e28712.chunk.js.LICENSE.txt",
+    "static/media/belarus.png": "/static/media/belarus.984a34e4.png",
     "static/media/homepage.css": "/static/media/bg5.0b985298.jpg",
     "static/media/prize.css": "/static/media/bg6.766bce0c.jpg",
     "static/media/embud2.png": "/static/media/embud2.a1b45a8b.png",
     "static/media/react.png": "/static/media/react.4ade5cac.png",
+    "static/media/russia.jpg": "/static/media/russia.1af670a4.jpg",
+    "static/media/uk.jpg": "/static/media/uk.8e95e24a.jpg",
     "static/media/alert.css": "/static/media/virus.dc865169.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8a5e5e17.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.c6b8216a.chunk.js",
-    "static/css/main.94d1d820.chunk.css",
-    "static/js/main.77fe8d21.chunk.js"
+    "static/js/2.52e28712.chunk.js",
+    "static/css/main.76e4a2ba.chunk.css",
+    "static/js/main.3f4c1f55.chunk.js"
   ]
 }
