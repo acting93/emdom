@@ -10,12 +10,12 @@ body{
 .cookie-div{
     width:100%;
     height:auto;
-    background: rgb(224, 224, 224);
-    border-top: 3px solid white;
+    background: rgb(255, 255, 255);
+    border-top: 3px solid rgb(0, 0, 0);
     position: fixed;
     bottom:0;
     padding: 20px;
-    color: rgb(134, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: auto;
     text-align: justify;
 }
