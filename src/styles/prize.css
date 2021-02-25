@@ -44,7 +44,7 @@
     position: relative;
     height:auto;
     width:100%;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     justify-content: center;
 }
@@ -52,7 +52,6 @@
     position: relative;
     flex-direction:row;
     width:400px;
-    margin-left: 10px;
     padding: 40px;
     text-align: center;
     background:none;
@@ -160,25 +159,30 @@
     display: block;
     width:100%;
     height: auto;
-    background: rgba(0, 0, 0, 0.486)
+    background: rgba(0, 0, 0, 0.651);
+    display: flex;
+    flex-direction: row;
+    padding: 0;
 }
-.fa-exclamation-circle{
-    position: relative;
-    font-size: 10rem;
-    color:rgb(150, 0, 0);
+.description-element{
+    height: 400px;
+}
+.description-element img{
     margin: 0 auto;
-    text-shadow: -5px 0px 2px rgb(251, 255, 8);
+    width:35rem;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
 }
-.services-description p{
-  text-align: center;
-  margin:0 auto;
-  width: 60%;
-  padding: 20px;
-  font-size: 18px;
-  color:rgb(196, 196, 196);
-  font-weight: 500;
-  -webkit-text-decoration: dashed;
-          text-decoration: dashed;
+.description-element p{
+    position: relative;
+    color: rgb(228, 228, 228);
+    font-size: 1.5rem;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
 }
 .docs-container{
     height:auto;
@@ -210,6 +214,20 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .description-element img{
+        width:25rem;
+    }
+    .description-element p{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:996px){
+    .description-element img{
+        width: 20rem;
+    }
+    .description-element p{
+        font-size: 1rem;
     }
 }
 @media(max-width:768px){
@@ -270,14 +288,18 @@
     }
     .services-description{
         margin-top: 20px;
+        display: flex;
+        flex-direction: column;
     }
-    .services-description p{
-        width:80%;
-        padding: 10px;
-        font-size: 16px;
+    .description-element{
+        height: 250px;
+        padding: 20px;
+        text-align: center;
     }
-    .fa-exclamation-circle{
-        font-size: 5rem;
+    .description-element img{
+        left: 0%;
+        top:50%;
+        transform: translate(0%,-50%);
     }
 }
 @media(max-width:576px){
@@ -306,11 +328,6 @@
         left:50%;
         transform: translateX(-50%);
     }
-    .services-description p{
-        width: 100%;
-        font-size: 13px;
-        text-align: left;
-    }
     .docs-container{
         padding: 5px;
         font-size: 12px;
@@ -319,14 +336,18 @@
 @media(max-width:450px){
     .prize-container{
         margin: 0;
-        padding: 5px;
+        padding: 0 !important;
         height: auto;
     }
     .prize-services{
-        padding: 10px;
+        width: 100%;
+        padding: 0 !important;
         display: block;
+        justify-content: left;
+        text-align: left;
     }
     .prize-service{
+        margin: 0 !important;
         display: block;
         font-size: 18px;
         width:100%;
@@ -354,6 +375,15 @@
     .services-description{
         margin-top: 5px;
     }
+    .description-element{
+        padding: 5px;
+    }
+    .description-element img{
+        width: 15rem;
+    }
+    .description-element p{
+        font-size: 0.8rem;
+    }
     .name-prize{
         font-size: 12px;
     }
@@ -370,10 +400,21 @@
         padding: 5px;
         height: 30%;
     }
-    .services-description p{
-       width:100%;
+    @media(max-width:320px){
+        .description-element img{
+            width: 12rem;
+        }
+        .description-element p{
+            font-size: 0.7rem;
+        }
     }
     @media(max-width:300px){
+        .prize-container{
+            padding: 0 !important;
+        }
+        .prize-service{
+            font-size: 0.8rem;
+        }
         .prize-firm{
             display: block;
             width:100%;
@@ -385,9 +426,8 @@
             margin-left: 0;
             border-radius: 10px;
         }
-        .services-description p{
-            padding: 5px;
-            font-size: 12px;
+        .description-element p{
+            font-size: 0.6rem;
         }
     }
 }

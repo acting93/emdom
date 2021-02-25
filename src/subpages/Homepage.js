@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/homepage.css';
-import Belarus from '../images/belarus.png'
-import Russia from '../images/russia.jpg'
-import Uk from '../images/uk.jpg'
-import Ukraine from '../images/ukraine.png'
+
 
 class Homepage extends Component {
     constructor(props) {
@@ -68,7 +65,7 @@ class Homepage extends Component {
                             <p>Świadczymy usługi BHP na najwyższym poziomie, z pełnym zaangażowaniem, na bieżąco szkolimy w zakresie zarządzania bezpieczeństwem i higieną pracy.</p>
                         </div>
                         <div className='aboutus-element col-sm-6 col-md-4 col-xl-3'>
-                            <p>Standardem jest zadowolenie pracowników i pracodawców z przeprowadzonych szkoleń. Stosuję jasne i zrozumiałe, a zarazem skuteczne rozwiązania z zakresu bezpieczeństwa pracy zgodnie z polskim prawodawstwem. Usługi świadczymy doraźnie wedle potrzeb lub poprzez umowę współpracy.</p>
+                            <p>Standardem jest zadowolenie pracowników i pracodawców z przeprowadzonych szkoleń. Stosuję jasne i zrozumiałe, a zarazem skuteczne rozwiązania z zakresu bezpieczeństwa pracy zgodnie z polskim prawodawstwem.<br/><br/> Usługi świadczymy doraźnie wedle potrzeb lub poprzez umowę współpracy.</p>
                         </div>
                         <div className='aboutus-element col-sm-6 col-md-4 col-xl-3'>
                             <p>Oferujemy usługi BHP oraz PPOŻ na terenie Warszawy, Radomia, Skaryszewa oraz okolic tych miast. Jesteśmy również otwarci na współpracę na terenie całego kraju. </p>

@@ -30,7 +30,7 @@
 .footer-contact{
     height:100%;
     padding: 0 !important;
-    border-right:2px solid silver;
+    border-right:2px solid rgb(138, 138, 138);;
     display: block;
 }
 .footer-contact-title{
@@ -57,7 +57,7 @@
 }
 .footer ul li a{
     text-decoration: none;
-    color:rgb(226, 226, 226);
+    color:rgb(138, 138, 138);
 }
 .footer ul li .fa{
     display:inline-block;
@@ -68,6 +68,7 @@
 .footer-contact ul li p{
     font-size: 16px;
     margin: 0%;
+    color:rgb(138, 138, 138);
     display:inline-block;
 }
 .footer-nav{
@@ -91,7 +92,7 @@
     display: block;
     text-align: center;
     padding: 10px;
-    border-right: 2px solid silver;
+    border-right: 2px solid rgb(138, 138, 138);;
 }
 .footer-nav li:hover{
     color:rgb(122, 2, 2);
@@ -106,7 +107,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: rgb(73, 0, 0);
+    background: rgb(0, 0, 0);
 }
 .preparation p{
     margin-top:10px;
@@ -117,8 +118,8 @@
 }
 .preparation img{
     margin-top:5px;
-    width:85px;
-    height:30px;
+    width:75px;
+    height:28px;
     position: relative;
     margin-left: 10px;
     display: inline-block;

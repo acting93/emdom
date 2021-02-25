@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    box-shadow: 0px 10px 10px rgb(124, 124, 124);
     font-family: 'Open Sans', sans-serif;
 }
 .homepage-slider span{
@@ -18,9 +18,7 @@
     height: 100%;
     padding: 40px;
     text-align: center;
-    background: rgba(112, 0, 0, 0.582);
-    -webkit-clip-path: circle(50%);
-            clip-path: circle(50%);
+    background: rgba(22, 13, 13, 0.582);
 }
 .homepage-slider p{
     position: relative;
@@ -34,10 +32,11 @@
 }
 .language-section{
     height: 250px;
+    background:linear-gradient(silver,silver,white);
 }
 .language-section p{
     text-align: center;
-    color: rgb(92, 92, 92);
+    color: rgb(61, 61, 61);
     padding:20px;
     font-size: 1.8rem;
     font-weight: 800;
@@ -182,15 +181,16 @@
     position: relative;
     height: 400px;
     padding: 5px;
-    text-align: center;
+    box-shadow: -5px 0 2px black;
 }
 .aboutus-element:nth-child(odd){
-    background:linear-gradient(to bottom, black,rgb(204, 133, 0),rgb(179, 116, 0));
+    background:linear-gradient(to bottom, black,rgb(165, 99, 0),rgb(179, 116, 0));
 }
 .aboutus-element:nth-child(even){
     background:linear-gradient(to bottom, black,rgb(107, 107, 107),rgb(107, 107, 107));
 }
 .aboutus-element p{
+    width:95%;
     color: rgb(255, 255, 255);
     position: relative;
     top:50%;
@@ -326,7 +326,6 @@
         height:100%;
         width: 100%;
     }
-    
 }
 @media(max-width:450px){
     .homepage-info{
