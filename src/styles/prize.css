@@ -148,12 +148,37 @@
 }
 .fa-check-circle{
     font-size: 16px;
-    color:white;
+    color:rgb(255, 115, 0);
     margin-right: 5px;
 }
 .services-elements p:last-child{
     color:rgb(6, 218, 6);
 }
+.service-range{
+    margin:10px auto;
+    padding: 10px;
+    height: auto;
+    overflow: hidden;
+}
+.service-range img{
+    position: absolute;
+    width: 25rem;
+    right:-10%;
+    top:50%;
+    transform: translateY(-50%);
+}
+.service-range p{
+    font-size: 1rem;
+    font-weight:4600;
+    color:rgb(221, 221, 221);
+}
+.service-range p:nth-child(2){
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:orange;
+}
+
 .services-description{
     margin:20px auto;
     display: block;
@@ -229,6 +254,13 @@
     .description-element p{
         font-size: 1rem;
     }
+    .service-range img{
+        position: relative;
+        width: 15rem;
+        left:50%;
+        transform: translate(-50%,0%);
+        margin-bottom: 30px;
+    }
 }
 @media(max-width:768px){
     .prize-services{
@@ -291,6 +323,9 @@
         display: flex;
         flex-direction: column;
     }
+    .service-range p:nth-child(2){
+        font-size: 1.1rem;
+    }
     .description-element{
         height: 250px;
         padding: 20px;
@@ -318,6 +353,16 @@
         font-weight: 400;
         font-size: 15px;
         box-shadow: 0 0 5px rgb(0, 0, 0);
+    }
+    .service-range p:nth-child(2){
+        font-size: 1rem;
+    }
+    .service-range p{
+        font-size: 0.8rem;
+    }
+    .service-range img{
+        width: 10rem;
+        margin-bottom: 25px;
     }
     .services-description{
         float: left;
@@ -371,6 +416,13 @@
         font-size: 13px;
         box-shadow: 0px 0px 3px black;
         margin-top: 10px;
+    }
+    .service-range p{
+        font-size: 0.8rem;
+    }
+    .service-range img{
+        width: 9rem;
+        margin-bottom: 20px;
     }
     .services-description{
         margin-top: 5px;

@@ -26,6 +26,7 @@ const ServicesFirm = (props) => {
 }
 
 const ServiceFirm = props =>{
+    
     const {name,prize} = props;
 
     return(

@@ -46,11 +46,12 @@ class Homepage extends Component {
                             <span className="span-title">Firma Emdom-BHP realizuje:</span>
                             <span className="span-description">
                                 <ul>
-                                    <li>Wstępne i okresowe szkolenia BHP i PPOŻ</li>
-                                    <li>Wdrażanie systemów bezpieczeństwa.</li>
-                                    <li>Przeprowadzanie kontroli stanu urządzeń technicznych BHP i PPOŻ.</li>
-                                    <li>Zarządzanie bezpieczeństwem i ochroną pracy wykorzystując najnowsze technologie<br/> i rozwiązania techniczne.</li>
-                                    <li>Dobieranie odpowiednich rozwiązań dla obniżenia kosztów w firmie, a tym samym zwiększenie wydajności.</li>
+                                    <li>Wstępne i okresowe szkolenia BHP</li>
+                                    <li>Szkolenia PPOŻ</li>
+                                    <li>Wdrażanie systemów bezpieczeństwa</li>
+                                    <li>Przeprowadzanie kontroli stanu urządzeń technicznych BHP i PPOŻ</li>
+                                    <li>Zarządzanie bezpieczeństwem i ochroną pracy wykorzystując najnowsze technologie<br/> i rozwiązania techniczne</li>
+                                    <li>Dobieranie odpowiednich rozwiązań dla obniżenia kosztów w firmie, a tym samym zwiększenie wydajności</li>
                                 </ul>
                             </span>
                         </div>
