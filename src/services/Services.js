@@ -4,7 +4,7 @@ import ExclamationSign from '../images/exclamation.png';
 
 const Services = (props) => {
     const {value} = props;
-    const service = value.map(item => <Service key={item.id} name={item.name} prize={item.prize} color={item.color} font={item.font} />);
+    const service = value.map(item => <Service key={item.id} name={item.name} prize={item.prize} color={item.color} font={item.font} gross={item.gross}/>);
    
     return ( 
         <>
@@ -27,11 +27,11 @@ const Services = (props) => {
 };
 
 const Service =(props)=>{
-    const {name,prize} = props;
+    const {name,prize,gross} = props;
     return(
         <>
             <div className='services-elements'>
-                <p><i className="fa fa-check-circle"></i>{name}</p><p>Koszt: {prize} brutto</p>
+                <p><i className="fa fa-check-circle"></i>{name}</p><p>Koszt: {prize} {gross}</p>
             </div>            
         </>
     );

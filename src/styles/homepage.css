@@ -81,7 +81,7 @@
     width: 10rem;
 }
 .container-homepage{
-    height:450px;
+    height:480px;
     display: flex;
     flex-direction: row;
     box-shadow: 0 -10px 10px rgb(0, 0, 0);
